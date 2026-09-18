@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --color-areia: #f6f2ec;
+  --color-bege: #efe8dd;
+  --color-verde: #22332c;
+  --color-terracota: #c08a63;
+  --color-bronze: #8c6a45;
+  --color-cinza: #6b6259;
+  --color-branco: #ffffff;
+}
+
+@theme inline {
+  --color-areia: var(--color-areia);
+  --color-bege: var(--color-bege);
+  --color-verde: var(--color-verde);
+  --color-terracota: var(--color-terracota);
+  --color-bronze: var(--color-bronze);
+  --color-cinza: var(--color-cinza);
+  --color-branco: var(--color-branco);
+  --font-title: "Fraunces Variable", Georgia, serif;
+  --font-body: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-areia);
+  color: var(--color-verde);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+  letter-spacing: -0.01em;
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.container-site {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-verde);
+  color: var(--color-areia);
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.88;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--color-verde);
+  border: 1px solid var(--color-verde);
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(34, 51, 44, 0.06);
+}
