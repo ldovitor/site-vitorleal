@@ -91,3 +91,49 @@ h4 {
 .btn-secondary:hover {
   background: rgba(34, 51, 44, 0.06);
 }
+
+/* Botões sobre fundo escuro (Hero com foto) */
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-terracota);
+  color: var(--color-verde);
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.btn-hero-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--color-areia);
+  border: 1px solid rgba(246, 242, 236, 0.55);
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-hero-secondary:hover {
+  background: rgba(246, 242, 236, 0.1);
+  border-color: rgba(246, 242, 236, 0.85);
+}
+
+/* Overlay escuro do Hero: mistura de degradê vertical (garante leitura em mobile,
+   onde o texto fica embaixo) com um degradê horizontal mais forte à esquerda
+   (onde o texto fica no desktop) — sem virar um bloco de cor sólida. */
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(34, 51, 44, 0.12) 0%, rgba(34, 51, 44, 0.55) 55%, rgba(34, 51, 44, 0.92) 100%),
+    linear-gradient(90deg, rgba(34, 51, 44, 0.8) 0%, rgba(34, 51, 44, 0.35) 50%, rgba(34, 51, 44, 0.05) 85%);
+}

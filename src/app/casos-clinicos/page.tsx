@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import CtaFinal from "@/components/CtaFinal";
+import BeforeAfterHover from "@/components/BeforeAfterHover";
 import { CASOS_CLINICOS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -39,14 +40,23 @@ export default function CasosClinicosPage() {
               id={caso.id}
               className="grid md:grid-cols-2 gap-8 md:gap-14 items-center scroll-mt-24"
             >
-              <div className={`grid ${caso.imagens.length > 1 ? "grid-cols-2 gap-3" : ""} ${
-                i % 2 === 1 ? "md:order-2" : ""
-              }`}>
-                {caso.imagens.map((img) => (
-                  <div key={img} className="relative aspect-square rounded-lg overflow-hidden bg-bege">
-                    <Image src={img} alt={caso.titulo} fill className="object-cover" sizes="50vw" />
+              <div className={i % 2 === 1 ? "md:order-2" : ""}>
+                {caso.id === "caso-b" ? (
+                  // Retrato de rosto inteiro, antes/depois de verdade — crossfade ao passar o mouse.
+                  <BeforeAfterHover
+                    antes={caso.imagens[0]}
+                    depois={caso.imagens[1]}
+                    alt={caso.titulo}
+                  />
+                ) : (
+                  <div className={`grid ${caso.imagens.length > 1 ? "grid-cols-2 gap-3" : ""}`}>
+                    {caso.imagens.map((img) => (
+                      <div key={img} className="relative aspect-square rounded-lg overflow-hidden bg-bege">
+                        <Image src={img} alt={caso.titulo} fill className="object-cover" sizes="50vw" />
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
               </div>
               <div className={i % 2 === 1 ? "md:order-1" : ""}>
                 <p className="text-sm text-bronze mb-2">Caso em destaque</p>

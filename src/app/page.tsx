@@ -10,36 +10,35 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO — Opção 1 do copy (ainda pendente de escolha final) */}
-      <section className="section pt-12 md:pt-20">
-        <div className="container-site grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="order-2 md:order-1">
-            <h1 className="text-4xl md:text-5xl leading-[1.1] mb-6">
+      {/* HERO — Opção 1 do copy (ainda pendente de escolha final). Foto de fundo com
+          degradê escuro atrás do texto, a pedido do Dr. Vitor (referência:
+          drvictorlazaro.com.br). */}
+      <section className="relative overflow-hidden min-h-[78vh] md:min-h-[88vh] flex items-end">
+        <Image
+          src="/images/site/hero-dr-vitor-pb.jpg"
+          alt="Dr. Vitor Leal em atendimento"
+          fill
+          priority
+          className="object-cover object-[center_30%] grayscale"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 hero-overlay" />
+        <div className="relative container-site pb-14 pt-32 md:pb-20">
+          <div className="max-w-xl">
+            <h1 className="text-4xl md:text-6xl leading-[1.08] mb-6 text-areia">
               Cada sorriso começa com um diagnóstico, não com uma promessa.
             </h1>
-            <p className="text-base md:text-lg text-cinza leading-relaxed mb-8 max-w-md">
+            <p className="text-base md:text-lg text-areia/85 leading-relaxed mb-8 max-w-md">
               Reabilitação oral e estética dental planejadas para devolver função e
               naturalidade — com a precisão de quem estuda cada caso antes de tratar.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-hero-primary">
                 Agendar avaliação
               </a>
-              <Link href="/sobre#protocolo-leal" className="btn-secondary">
+              <Link href="/sobre#protocolo-leal" className="btn-hero-secondary">
                 Conhecer o Protocolo Leal
               </Link>
-            </div>
-          </div>
-          <div className="order-1 md:order-2">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-bege">
-              <Image
-                src="/images/site/hero-dr-vitor-pb.jpg"
-                alt="Dr. Vitor Leal em atendimento"
-                fill
-                priority
-                className="object-cover grayscale"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
             </div>
           </div>
         </div>
