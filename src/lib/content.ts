@@ -4,6 +4,45 @@ export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
   WHATSAPP_MESSAGE
 )}`;
 
+// Place ID real da Clínica Ortoface no Google (extraído do widget de avaliações
+// já em uso no site antigo, odontologiavitorleal.com.br).
+export const GOOGLE_PLACE_ID = "ChIJY5uG6FzN2JQRfZM1OcRyp_U";
+export const GOOGLE_REVIEWS_URL = `https://www.google.com/maps/place/?q=place_id:${GOOGLE_PLACE_ID}`;
+export const GOOGLE_REVIEWS_COUNT = 58;
+
+// Avaliações reais de pacientes no Google, copiadas do site atual (mesma fonte;
+// texto e nomes exatamente como publicados publicamente). Enquanto não conectamos
+// um widget ao vivo (ex.: Trustindex, que exige conta própria para este domínio),
+// esta lista fica estática — precisa ser atualizada manualmente de tempos em tempos.
+export const REVIEWS = [
+  {
+    autor: "Lucas da Silva Pereira",
+    texto:
+      "Indico tranquilamente. Ambiente limpo e organizado. O Vitor é um dentista muito atencioso, e de extrema confiança. Clínica odontológica de autoridade na cidade de Itajaí-SC!",
+  },
+  {
+    autor: "Berenice Piccoli",
+    texto: "Fui muito bem atendida pelo Dr. Vitor na Ortoface em Itajaí. Profissional muito qualificado e competente.",
+  },
+  {
+    autor: "Izabelle Coelho de Souza",
+    texto:
+      "Tive uma ótima experiência como paciente do Dr. Vitor!! Recomendo muito pra quem preza por bom atendimento e serviço especializado.",
+  },
+  {
+    autor: "Ronaldo Maciel",
+    texto: "Atendimento excelente, qualidade impecável das lentes, só tenho à agradecer.",
+  },
+  {
+    autor: "Canaã",
+    texto: "Excepcional o atendimento do Doutor Vitor, me ajudou a perder o medo de ir ao dentista. Super recomendo!",
+  },
+  {
+    autor: "João Paulo",
+    texto: "Ótimo ambiente e atendimento impecável, recomendo muito!",
+  },
+];
+
 export const NAV_LINKS = [
   { href: "/", label: "Início" },
   { href: "/tratamentos", label: "Tratamentos" },

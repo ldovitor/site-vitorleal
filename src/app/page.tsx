@@ -3,7 +3,14 @@ import Link from "next/link";
 import ProtocoloTimeline from "@/components/ProtocoloTimeline";
 import FaqAccordion from "@/components/FaqAccordion";
 import CtaFinal from "@/components/CtaFinal";
-import { CASOS_CLINICOS, TRATAMENTOS, WHATSAPP_LINK } from "@/lib/content";
+import {
+  CASOS_CLINICOS,
+  TRATAMENTOS,
+  WHATSAPP_LINK,
+  REVIEWS,
+  GOOGLE_REVIEWS_URL,
+  GOOGLE_REVIEWS_COUNT,
+} from "@/lib/content";
 
 export default function Home() {
   const casosDestaque = CASOS_CLINICOS.filter((c) => c.destaque).slice(0, 3);
@@ -203,14 +210,25 @@ export default function Home() {
       {/* PROVA SOCIAL */}
       <section className="section">
         <div className="container-site text-center">
-          <h2 className="text-3xl mb-10">O que dizem os pacientes</h2>
-          <div className="max-w-2xl mx-auto rounded-lg border border-verde/10 bg-bege/40 p-10">
-            <p className="text-cinza text-sm leading-relaxed">
-              As avaliações reais do Google (widget Trustindex, já em uso no site atual)
-              entram aqui assim que o código de incorporação for conectado. Depoimentos em
-              vídeo, a produzir mais adiante, terão espaço reservado logo abaixo.
-            </p>
+          <h2 className="text-3xl mb-3">O que dizem os pacientes</h2>
+          <p className="text-cinza text-sm mb-10">{GOOGLE_REVIEWS_COUNT} avaliações no Google</p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
+            {REVIEWS.map((review) => (
+              <div key={review.autor} className="rounded-lg border border-verde/10 bg-bege/40 p-6">
+                <p className="text-cinza text-sm leading-relaxed mb-4">&ldquo;{review.texto}&rdquo;</p>
+                <p className="text-sm text-verde font-medium">{review.autor}</p>
+                <p className="text-xs text-bronze">Avaliação no Google</p>
+              </div>
+            ))}
           </div>
+          <a
+            href={GOOGLE_REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary inline-flex mt-10"
+          >
+            Ver todas as avaliações no Google
+          </a>
         </div>
       </section>
 

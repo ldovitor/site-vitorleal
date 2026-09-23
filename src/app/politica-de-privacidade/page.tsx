@@ -22,7 +22,7 @@ export default function PoliticaPrivacidadePage() {
           direitos do titular dos dados conforme a Lei Geral de Proteção de Dados
           (LGPD).
         </p>
-        <p>Ferramentas de terceiros usadas no site: Google Analytics, Trustindex (avaliações do Google), WhatsApp.</p>
+        <p>Ferramentas de terceiros usadas no site: Google Maps, WhatsApp.</p>
       </div>
     </section>
   );
