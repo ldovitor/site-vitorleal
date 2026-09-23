@@ -24,11 +24,6 @@ export default function CasosClinicosPage() {
             construído dentro do Protocolo Leal e o motivo de cada decisão clínica.
             Autorização de uso em marketing confirmada para todos os casos abaixo.
           </p>
-          <p className="text-sm text-bronze mt-4 italic">
-            Nota interna: o tipo exato de tratamento de cada caso está pendente de
-            confirmação, foto a foto — não publicar a versão final do texto sem essa
-            revisão.
-          </p>
         </div>
       </section>
 
@@ -62,11 +57,6 @@ export default function CasosClinicosPage() {
                 <p className="text-sm text-bronze mb-2">Caso em destaque</p>
                 <h2 className="text-2xl mb-4">{caso.titulo}</h2>
                 <p className="text-cinza leading-relaxed mb-4">{caso.desafio}</p>
-                {caso.aprendizado && (
-                  <p className="text-sm text-cinza/80 italic leading-relaxed">
-                    {caso.aprendizado}
-                  </p>
-                )}
               </div>
             </div>
           ))}

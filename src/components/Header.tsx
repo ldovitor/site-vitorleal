@@ -30,7 +30,7 @@ export default function Header() {
           Dr. Vitor Leal
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -47,13 +47,13 @@ export default function Header() {
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex btn-primary text-sm"
+          className="hidden lg:inline-flex btn-primary text-sm"
         >
           Agendar avaliação
         </a>
 
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="lg:hidden flex flex-col gap-1.5 p-2"
           aria-label="Abrir menu"
           onClick={() => setOpen(!open)}
         >
@@ -64,7 +64,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-verde/10 bg-areia">
+        <div className="lg:hidden border-t border-verde/10 bg-areia">
           <nav className="container-site flex flex-col py-4 gap-4">
             {NAV_LINKS.map((link) => (
               <Link

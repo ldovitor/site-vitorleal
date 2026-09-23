@@ -14,6 +14,7 @@ export async function generateMetadata(props: PageProps<"/tratamentos/[slug]">) 
   if (!tratamento) return {};
   return {
     title: tratamento.title,
+    description: tratamento.resumoCard,
   };
 }
 

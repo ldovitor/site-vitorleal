@@ -25,8 +25,8 @@ export default function TratamentosPage() {
         </div>
       </section>
 
-      {CATEGORIAS.map((categoria, i) => (
-        <section key={categoria} className={`section pt-0 ${i === 0 ? "" : ""}`}>
+      {CATEGORIAS.map((categoria) => (
+        <section key={categoria} className="section pt-0">
           <div className="container-site">
             <h2 className="text-2xl mb-6">{categoria}</h2>
             <div className="grid md:grid-cols-2 gap-6">

@@ -286,6 +286,8 @@ export type CasoClinico = {
 
 // Nota: tipo exato de tratamento por caso ainda pendente de confirmação
 // (combinado com o Dr. Vitor — revisão foto a foto, agora que existe protótipo visual).
+// O campo `aprendizado` é rationale interno (por que o caso entrou no portfólio),
+// não copy voltada ao paciente — não renderizar publicamente sem reescrever antes.
 export const CASOS_CLINICOS: CasoClinico[] = [
   {
     id: "caso-a",
