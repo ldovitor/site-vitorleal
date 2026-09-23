@@ -11,9 +11,11 @@ import {
   GOOGLE_REVIEWS_URL,
   GOOGLE_REVIEWS_COUNT,
 } from "@/lib/content";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export default function Home() {
   const casosDestaque = CASOS_CLINICOS.filter((c) => c.destaque).slice(0, 3);
+  const postsRecentes = BLOG_POSTS.slice(-3).reverse();
 
   return (
     <>
@@ -142,6 +144,7 @@ export default function Home() {
       <section className="section bg-areia">
         <div className="container-site">
           <div className="max-w-xl mb-12">
+            <p className="text-sm text-bronze mb-2">Casos Clínicos</p>
             <h2 className="text-3xl mb-3">Planejamento que se vê no resultado</h2>
             <p className="text-cinza">
               Cada caso tem um raciocínio por trás — o problema identificado, o plano
@@ -202,6 +205,39 @@ export default function Home() {
             </p>
             <Link href="/sobre" className="btn-secondary">
               Conhecer o Dr. Vitor Leal
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG — prévia */}
+      <section className="section">
+        <div className="container-site">
+          <div className="max-w-xl mb-12">
+            <h2 className="text-3xl mb-3">Do blog</h2>
+            <p className="text-cinza">
+              Respostas a dúvidas que aparecem com frequência na avaliação.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {postsRecentes.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="block bg-bege rounded-lg p-8 hover:shadow-sm transition-shadow"
+              >
+                <p className="text-xs text-bronze mb-3">{post.dataExibicao}</p>
+                <h3 className="text-lg mb-3">{post.title}</h3>
+                <p className="text-sm text-cinza leading-relaxed mb-4">{post.resumo}</p>
+                <span className="text-sm text-bronze">Ler artigo →</span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/blog" className="btn-secondary">
+              Ver todos os artigos
             </Link>
           </div>
         </div>
