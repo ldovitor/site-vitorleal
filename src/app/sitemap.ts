@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "", priority: 1 },
     { route: "/tratamentos", priority: 0.9 },
     { route: "/casos-clinicos", priority: 0.8 },
+    { route: "/estrutura", priority: 0.6 },
     { route: "/blog", priority: 0.7 },
     { route: "/sobre", priority: 0.7 },
     { route: "/faq-contato", priority: 0.7 },

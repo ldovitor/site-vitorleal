@@ -47,6 +47,7 @@ export const NAV_LINKS = [
   { href: "/", label: "Início" },
   { href: "/tratamentos", label: "Tratamentos" },
   { href: "/casos-clinicos", label: "Casos Clínicos" },
+  { href: "/estrutura", label: "Estrutura" },
   { href: "/blog", label: "Blog" },
   { href: "/sobre", label: "Sobre" },
   { href: "/faq-contato", label: "FAQ / Contato" },
