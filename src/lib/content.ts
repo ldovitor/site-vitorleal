@@ -214,6 +214,9 @@ export type CasoClinico = {
   imagens: string[];
   desafio: string;
   aprendizado?: string;
+  // Categoria provisória (para agrupar casos nas páginas de tratamento) — mesmo
+  // aviso da nota abaixo: confirmar com o Dr. Vitor antes de publicar como definitivo.
+  categoria?: Tratamento["categoria"];
 };
 
 // Nota: tipo exato de tratamento por caso ainda pendente de confirmação
@@ -223,6 +226,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-a",
     titulo: "Reabilitação de sorriso sem dentes visíveis",
     destaque: true,
+    categoria: "Reabilitação Oral",
     imagens: ["/images/casos/caso-a-idosaA-boca.jpg", "/images/casos/caso-a-idosaA-labios.jpg"],
     desafio:
       "A paciente chegou sem dentes visíveis ao sorrir, o que afetava função e confiança no dia a dia.",
@@ -233,6 +237,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-b",
     titulo: "Retrato de reabilitação completa",
     destaque: true,
+    categoria: "Reabilitação Oral",
     imagens: ["/images/casos/caso-b-idosaB-antes.jpg", "/images/casos/caso-b-idosaB-depois.jpg"],
     desafio:
       "Paciente sem dentes à mostra no sorriso, documentada em retrato de rosto inteiro — o material mais completo do lote para mostrar impacto real na expressão, não só na boca.",
@@ -243,6 +248,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-c",
     titulo: "Reabilitação de arco comprometido",
     destaque: true,
+    categoria: "Reabilitação Oral",
     imagens: ["/images/casos/caso-c-homem-rosto.jpg"],
     desafio:
       "Dentes muito desgastados e comprometidos, afetando estética e função visivelmente.",
@@ -253,6 +259,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-d",
     titulo: "Correção pontual",
     destaque: true,
+    categoria: "Estética Dental",
     imagens: ["/images/casos/caso-d-pontual-boca.jpg"],
     desafio: "Dente frontal lascado/manchado, incômodo estético mesmo sendo um caso pontual.",
     aprendizado:
@@ -262,6 +269,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-e",
     titulo: "Reabilitação completa do sorriso",
     destaque: false,
+    categoria: "Reabilitação Oral",
     imagens: ["/images/casos/caso-e-homem-rosto.jpg"],
     desafio: "Dentes desgastados e com espaçamento, impacto direto na expressão.",
   },
@@ -269,6 +277,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-f",
     titulo: "Reabilitação de arco comprometido",
     destaque: false,
+    categoria: "Reabilitação Oral",
     imagens: ["/images/casos/caso-f-homem-careca-rosto.jpg"],
     desafio: "Dentes quebrados e faltando, impacto direto na expressão e na mastigação.",
   },
@@ -276,6 +285,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-g",
     titulo: "Correção de alinhamento",
     destaque: false,
+    categoria: "Estética Dental",
     imagens: ["/images/casos/caso-g-boca.jpg"],
     desafio: "Espaçamento entre os dentes frontais, incômodo estético mesmo com boa saúde bucal.",
   },
@@ -283,6 +293,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-h",
     titulo: "Correção de alinhamento",
     destaque: false,
+    categoria: "Estética Dental",
     imagens: ["/images/casos/caso-h-boca.jpg"],
     desafio: "Dentes desalinhados e com espaçamento visível.",
   },
@@ -290,6 +301,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     id: "caso-i",
     titulo: "Correção de desgaste",
     destaque: false,
+    categoria: "Estética Dental",
     imagens: ["/images/casos/caso-j-boca.jpg"],
     desafio: "Desgaste visível na região frontal, corrigido com planejamento conservador.",
   },
