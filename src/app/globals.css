@@ -37,57 +37,59 @@ h4 {
   letter-spacing: -0.01em;
 }
 
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
-@media (max-width: 768px) {
+@layer components {
   .section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
-}
 
-.container-site {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
+  @media (max-width: 768px) {
+    .section {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
 
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-verde);
-  color: var(--color-areia);
-  border-radius: 8px;
-  padding: 14px 28px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: opacity 0.15s ease;
-}
+  .container-site {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
-.btn-primary:hover {
-  opacity: 0.88;
-}
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-verde);
+    color: var(--color-areia);
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.15s ease;
+  }
 
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  color: var(--color-verde);
-  border: 1px solid var(--color-verde);
-  border-radius: 8px;
-  padding: 14px 28px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: background 0.15s ease;
-}
+  .btn-primary:hover {
+    opacity: 0.88;
+  }
 
-.btn-secondary:hover {
-  background: rgba(34, 51, 44, 0.06);
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--color-verde);
+    border: 1px solid var(--color-verde);
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.15s ease;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(34, 51, 44, 0.06);
+  }
 }
