@@ -71,8 +71,8 @@ export default function Home() {
             <h2 className="text-3xl mb-3">Tratamentos</h2>
             <p className="text-cinza">
               Cada tratamento parte da mesma pergunta: o que o seu caso precisa para
-              funcionar bem e parecer natural? A partir da avaliação, o cuidado se
-              organiza em três frentes.
+              funcionar bem e parecer natural? A resposta segue o Protocolo Leal de
+              Reabilitação Planejada.
             </p>
           </div>
 
