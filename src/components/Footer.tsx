@@ -22,8 +22,9 @@ export default function Footer() {
         <div>
           <p className="font-title text-xl mb-3">Dr. Vitor Leal</p>
           <p className="text-sm text-areia/70 leading-relaxed">
-            Cirurgião-dentista, CRO-SC 20602. Reabilitação oral e estética dental em
-            Itajaí, atendendo também Balneário Camboriú e Camboriú.
+            Cirurgião-dentista, CRO-SC 20602 — sócio da Clínica Ortoface. Reabilitação
+            oral e estética dental em Itajaí, atendendo também Balneário Camboriú e
+            Camboriú.
           </p>
         </div>
 

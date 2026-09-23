@@ -10,7 +10,7 @@ import { WHATSAPP_NUMBER } from "@/lib/content";
 const BASE_URL = "https://site-vitorleal.vercel.app";
 const SITE_TITLE = "Dr. Vitor Leal | Clínica Ortoface — Reabilitação Oral em Itajaí";
 const SITE_DESCRIPTION =
-  "Cirurgião-dentista CRO-SC 20602, sócio da Clínica Ortoface. Reabilitação oral, laminados cerâmicos e implantes dentários em Itajaí e Balneário Camboriú, com o Protocolo Leal de Reabilitação Planejada.";
+  "Cirurgião-dentista CRO-SC 20602, sócio da Clínica Ortoface em Itajaí/SC. Reabilitação oral, implantes e estética dental — Protocolo Leal de Reabilitação Planejada.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

@@ -269,8 +269,8 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Quanto tempo demora uma reabilitação oral completa?",
     metaDescription:
       "Reabilitação oral completa é um processo em etapas, não um procedimento único. Entenda o que influencia o prazo total do tratamento.",
-    dataISO: "2026-09-29",
-    dataExibicao: "29 de setembro de 2026",
+    dataISO: "2026-09-23",
+    dataExibicao: "23 de setembro de 2026",
     resumo: "Não existe um prazo padrão — existe um plano em etapas, construído para o seu caso.",
     respostaDireta:
       "Reabilitação oral completa não tem um prazo fixo: o tempo total depende de quantos dentes e estruturas estão envolvidos, e de quais tratamentos combinados (implantes, próteses, restaurações) o caso exige — por isso o plano é construído em etapas, com prazos definidos na avaliação.",
@@ -322,8 +322,8 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Clareamento dental: quem pode fazer e o que esperar do resultado",
     metaDescription:
       "Nem todo escurecimento dental responde da mesma forma ao clareamento. Entenda quem costuma se beneficiar e como o resultado é avaliado.",
-    dataISO: "2026-10-06",
-    dataExibicao: "6 de outubro de 2026",
+    dataISO: "2026-09-23",
+    dataExibicao: "23 de setembro de 2026",
     resumo: "Clareamento funciona bem para a maioria — mas não é a resposta para todo tipo de escurecimento dental.",
     respostaDireta:
       "O clareamento dental costuma funcionar bem para escurecimento causado por hábitos (café, cigarro, envelhecimento natural do esmalte), mas manchas de origem interna ao dente — por trauma ou por certos medicamentos, por exemplo — podem responder menos, e às vezes pedem outra abordagem.",
