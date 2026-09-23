@@ -4,9 +4,9 @@ import ProtocoloTimeline from "@/components/ProtocoloTimeline";
 import CtaFinal from "@/components/CtaFinal";
 
 export const metadata: Metadata = {
-  title: "Sobre o Dr. Vitor Leal | CRO-SC 20602",
+  title: "Sobre o Dr. Vitor Leal | Dentista em Itajaí e Balneário Camboriú",
   description:
-    "Cirurgião-dentista formado pela Uniavan, especialista em Dentística Restauradora, sócio da Clínica Ortoface em Itajaí/SC.",
+    "Cirurgião-dentista CRO-SC 20602, formado pela Uniavan, especialista em Dentística Restauradora, sócio da Clínica Ortoface em Itajaí/SC.",
 };
 
 export default function SobrePage() {

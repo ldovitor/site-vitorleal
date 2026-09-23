@@ -4,7 +4,7 @@ import CtaFinal from "@/components/CtaFinal";
 import { TRATAMENTOS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Tratamentos | Dr. Vitor Leal",
+  title: "Tratamentos Odontológicos em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
   description:
     "Estética dental, reabilitação oral e implantes em Itajaí e Balneário Camboriú, planejados dentro do Protocolo Leal de Reabilitação Planejada.",
 };

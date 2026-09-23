@@ -5,7 +5,7 @@ import BeforeAfterHover from "@/components/BeforeAfterHover";
 import { CASOS_CLINICOS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Casos Clínicos | Dr. Vitor Leal",
+  title: "Casos Clínicos de Reabilitação Oral | Dr. Vitor Leal — Itajaí",
   description:
     "Casos reais de reabilitação oral e estética dental, com autorização de uso em marketing, documentados dentro do Protocolo Leal de Reabilitação Planejada.",
 };

@@ -1,17 +1,34 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import FaqAccordion from "@/components/FaqAccordion";
-import { WHATSAPP_LINK } from "@/lib/content";
+import { WHATSAPP_LINK, FAQ_ITEMS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "FAQ e Contato | Dr. Vitor Leal",
+  title: "Perguntas Frequentes e Contato | Dentista em Itajaí — Dr. Vitor Leal",
   description:
-    "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC.",
+    "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC, atendendo também Balneário Camboriú e Camboriú.",
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.pergunta,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.resposta,
+    },
+  })),
 };
 
 export default function FaqContatoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="section pt-16">
         <div className="container-site max-w-2xl">
           <h1 className="text-4xl mb-5">Perguntas frequentes</h1>

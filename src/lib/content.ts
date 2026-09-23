@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "5547999999999"; // placeholder — confirmar número real antes de publicar
+export const WHATSAPP_NUMBER = "554796401067";
 export const WHATSAPP_MESSAGE = "Olá! Vim pelo site e gostaria de agendar uma avaliação.";
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   WHATSAPP_MESSAGE
