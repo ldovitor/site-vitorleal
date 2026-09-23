@@ -89,7 +89,7 @@ export default function Home() {
                 titulo: "Estética Dental",
                 texto:
                   "Para quem quer um sorriso mais harmônico sem abrir mão da naturalidade: laminados cerâmicos, facetas em resina, clareamento e restaurações estéticas.",
-                href: "/tratamentos/laminados-ceramicos",
+                href: "/tratamentos/estetica-dental",
               },
               {
                 titulo: "Reabilitação Oral",
