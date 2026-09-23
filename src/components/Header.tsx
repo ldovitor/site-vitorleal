@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { NAV_LINKS } from "@/lib/content";
+import { NAV_LINKS, WHATSAPP_LINK } from "@/lib/content";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -26,9 +26,14 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="/faq-contato" className="hidden md:inline-flex btn-primary text-sm">
+        <a
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-flex btn-primary text-sm"
+        >
           Agendar avaliação
-        </Link>
+        </a>
 
         <button
           className="md:hidden flex flex-col gap-1.5 p-2"
@@ -54,9 +59,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/faq-contato" className="btn-primary text-sm mt-2" onClick={() => setOpen(false)}>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-sm mt-2"
+              onClick={() => setOpen(false)}
+            >
               Agendar avaliação
-            </Link>
+            </a>
           </nav>
         </div>
       )}

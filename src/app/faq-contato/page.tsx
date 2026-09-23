@@ -74,8 +74,14 @@ export default function FaqContatoPage() {
 
       <section className="section">
         <div className="container-site">
-          <div className="w-full aspect-[16/6] rounded-lg bg-bege flex items-center justify-center text-cinza text-sm">
-            Mapa incorporado (Google Maps embed) — a conectar
+          <div className="w-full aspect-[16/6] rounded-lg overflow-hidden bg-bege">
+            <iframe
+              src="https://www.google.com/maps?q=Rua+Lauro+M%C3%BCller%2C+757+-+Fazenda%2C+Itaja%C3%AD+-+SC%2C+88301-401&output=embed"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Ortoface — Rua Lauro Müller, 757, Itajaí/SC"
+            />
           </div>
         </div>
       </section>
