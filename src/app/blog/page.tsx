@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import CtaFinal from "@/components/CtaFinal";
 import { BLOG_POSTS } from "@/lib/blog";
+import { TRATAMENTOS } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Blog | Dúvidas sobre Tratamentos Dentários — Dr. Vitor Leal",
@@ -26,18 +27,27 @@ export default function BlogPage() {
         <div className="container-site grid md:grid-cols-2 gap-6">
           {BLOG_POSTS.slice()
             .reverse()
-            .map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="block bg-bege rounded-lg p-8 hover:shadow-sm transition-shadow"
-              >
-                <p className="text-xs text-bronze mb-3">{post.dataExibicao}</p>
-                <h2 className="text-xl mb-3">{post.title}</h2>
-                <p className="text-sm text-cinza leading-relaxed mb-4">{post.resumo}</p>
-                <span className="text-sm text-bronze">Ler artigo →</span>
-              </Link>
-            ))}
+            .map((post) => {
+              const tratamento = TRATAMENTOS.find((t) => t.slug === post.tratamentoRelacionado);
+              return (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="block bg-bege rounded-lg p-8 hover:shadow-sm transition-shadow"
+                >
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-bronze mb-3">
+                    {tratamento && (
+                      <span className="uppercase tracking-wide font-medium">{tratamento.categoria}</span>
+                    )}
+                    <span aria-hidden="true">·</span>
+                    <span>{post.dataExibicao}</span>
+                  </div>
+                  <h2 className="text-xl mb-3">{post.title}</h2>
+                  <p className="text-sm text-cinza leading-relaxed mb-4">{post.resumo}</p>
+                  <span className="text-sm text-bronze">Ler artigo →</span>
+                </Link>
+              );
+            })}
         </div>
       </section>
 
