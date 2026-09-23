@@ -1,7 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NAV_LINKS, WHATSAPP_LINK } from "@/lib/content";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Mesmo caso do Header: clicar num link para a rota atual não navega nem
+  // rola — força a rolagem pro topo (ex.: "Início" no rodapé, página rolada).
+  const scrollToTopIfSameRoute = (href: string) => (e: React.MouseEvent) => {
+    if (href === pathname) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-verde text-areia">
       <div className="container-site py-16 grid gap-10 md:grid-cols-3">
@@ -18,7 +32,11 @@ export default function Footer() {
           <ul className="space-y-2">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-sm text-areia/70 hover:text-areia">
+                <Link
+                  href={link.href}
+                  onClick={scrollToTopIfSameRoute(link.href)}
+                  className="text-sm text-areia/70 hover:text-areia"
+                >
                   {link.label}
                 </Link>
               </li>
@@ -45,7 +63,11 @@ export default function Footer() {
       <div className="border-t border-areia/10">
         <div className="container-site py-6 text-xs text-areia/50 flex flex-wrap gap-x-4 gap-y-2 justify-between">
           <span>© {new Date().getFullYear()} Dr. Vitor Leal — CRO-SC 20602. Todos os direitos reservados.</span>
-          <Link href="/politica-de-privacidade" className="hover:text-areia">
+          <Link
+            href="/politica-de-privacidade"
+            onClick={scrollToTopIfSameRoute("/politica-de-privacidade")}
+            className="hover:text-areia"
+          >
             Política de Privacidade
           </Link>
         </div>
