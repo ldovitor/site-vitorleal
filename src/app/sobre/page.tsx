@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 export default function SobrePage() {
   return (
     <>
-      <section className="section pt-16 pb-0">
-        <div className="container-site grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <section className="section">
+        <div className="container-site grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-20">
           <div>
             <h1 className="text-4xl mb-5">Dr. Vitor Leal</h1>
             <p className="text-cinza leading-relaxed">
@@ -32,9 +32,7 @@ export default function SobrePage() {
             />
           </div>
         </div>
-      </section>
 
-      <section className="section">
         <div className="container-site max-w-2xl space-y-6 text-cinza leading-relaxed">
           <p>
             Sou cirurgião-dentista, formado em Odontologia pela Uniavan, com registro
