@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Sobre o Dr. Vitor Leal | Clínica Ortoface, Itajaí/SC",
   description:
     "Cirurgião-dentista CRO-SC 20602, formado pela Uniavan, especialista em Dentística Restauradora, sócio da Clínica Ortoface em Itajaí/SC.",
+  alternates: {
+    canonical: "/sobre",
+  },
 };
 
 export default function SobrePage() {
@@ -37,11 +40,12 @@ export default function SobrePage() {
           <p>
             Sou cirurgião-dentista, formado em Odontologia pela Uniavan, com registro
             CRO-SC 20602. Atuo há mais de 5 anos especializado em dentística e
-            reabilitação oral, e sou sócio da Clínica Ortoface, em Itajaí/SC, ao lado do
-            Dr. Claudio Piccoli — especialista em ortodontia. Na Ortoface, mantemos uma
-            estrutura pensada para planejamento de precisão: scanner intraoral e
-            radiografia digital, que permitem enxergar cada caso com detalhe antes de
-            qualquer decisão clínica.
+            reabilitação oral, e sou sócio da Clínica Ortoface, em Itajaí/SC — que já
+            soma mais de 16 anos de história atendendo a região — ao lado do Dr. Claudio
+            Piccoli, especialista em ortodontia. Na Ortoface, mantemos uma estrutura
+            pensada para planejamento de precisão: scanner intraoral e radiografia
+            digital, que permitem enxergar cada caso com detalhe antes de qualquer
+            decisão clínica.
           </p>
           <p>
             Minha atuação é concentrada em reabilitação oral e estética dental — áreas
@@ -96,7 +100,7 @@ export default function SobrePage() {
             <li>Especialização em Dentística Restauradora — IOA Style</li>
             <li>Aperfeiçoamento em Facetas em Resina Composta</li>
             <li>Atualização em Laminados Cerâmicos</li>
-            <li>Sócio da Clínica Ortoface, Itajaí/SC</li>
+            <li>Sócio da Clínica Ortoface, Itajaí/SC — mais de 16 anos de história</li>
           </ul>
         </div>
       </section>

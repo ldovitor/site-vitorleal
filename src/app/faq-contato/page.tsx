@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Perguntas Frequentes e Contato | Dentista em Itajaí — Dr. Vitor Leal",
   description:
     "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC, atendendo também Balneário Camboriú e Camboriú.",
+  alternates: {
+    canonical: "/faq-contato",
+  },
 };
 
 const faqJsonLd = {

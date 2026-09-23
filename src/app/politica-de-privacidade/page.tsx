@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Política de Privacidade | Dr. Vitor Leal",
   robots: { index: false },
+  alternates: {
+    canonical: "/politica-de-privacidade",
+  },
 };
 
 export default function PoliticaPrivacidadePage() {

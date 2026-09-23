@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Tratamentos Odontológicos em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
   description:
     "Estética dental, reabilitação oral e implantes em Itajaí e Balneário Camboriú, planejados dentro do Protocolo Leal de Reabilitação Planejada.",
+  alternates: {
+    canonical: "/tratamentos",
+  },
 };
 
 const CATEGORIAS = ["Estética Dental", "Reabilitação Oral", "Implantes"] as const;

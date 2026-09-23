@@ -28,6 +28,9 @@ export async function generateMetadata(props: PageProps<"/blog/[slug]">) {
   return {
     title: `${post.title} | Dr. Vitor Leal`,
     description: post.metaDescription,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
   };
 }
 

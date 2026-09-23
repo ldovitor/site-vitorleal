@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Blog | Dúvidas sobre Tratamentos Dentários — Dr. Vitor Leal",
   description:
     "Respostas a dúvidas comuns sobre lentes de contato dental, implantes, próteses, reabilitação oral e clareamento, por Dr. Vitor Leal (CRO-SC 20602), em Itajaí/SC.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogPage() {

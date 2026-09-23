@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Casos Clínicos de Reabilitação Oral | Dr. Vitor Leal — Itajaí",
   description:
     "Casos reais de reabilitação oral e estética dental, com autorização de uso em marketing, documentados dentro do Protocolo Leal de Reabilitação Planejada.",
+  alternates: {
+    canonical: "/casos-clinicos",
+  },
 };
 
 export default function CasosClinicosPage() {
