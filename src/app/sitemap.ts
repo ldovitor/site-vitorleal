@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { TRATAMENTOS } from "@/lib/content";
+import { BLOG_POSTS } from "@/lib/blog";
 
 const BASE_URL = "https://site-vitorleal.vercel.app";
 
@@ -8,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "", priority: 1 },
     { route: "/tratamentos", priority: 0.9 },
     { route: "/casos-clinicos", priority: 0.8 },
+    { route: "/blog", priority: 0.7 },
     { route: "/sobre", priority: 0.7 },
     { route: "/faq-contato", priority: 0.7 },
     { route: "/politica-de-privacidade", priority: 0.2 },
@@ -23,5 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...treatmentRoutes];
+  const blogRoutes = BLOG_POSTS.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.dataISO),
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...treatmentRoutes, ...blogRoutes];
 }

@@ -47,6 +47,7 @@ export const NAV_LINKS = [
   { href: "/", label: "Início" },
   { href: "/tratamentos", label: "Tratamentos" },
   { href: "/casos-clinicos", label: "Casos Clínicos" },
+  { href: "/blog", label: "Blog" },
   { href: "/sobre", label: "Sobre" },
   { href: "/faq-contato", label: "FAQ / Contato" },
 ];
@@ -243,6 +244,31 @@ export const FAQ_ITEMS = [
     pergunta: "Como funciona a primeira consulta?",
     resposta:
       "Avaliação clínica completa, conversa sobre o que te incomoda e o que você espera, e a partir daí o plano de tratamento é apresentado dentro do Protocolo Leal.",
+  },
+  {
+    pergunta: "Lentes de contato dental doem?",
+    resposta:
+      "O procedimento é feito com anestesia local, então não costuma doer durante. Alguma sensibilidade nos dias seguintes é possível e normal — é acompanhada de perto no seu retorno.",
+  },
+  {
+    pergunta: "Implante dentário dói muito?",
+    resposta:
+      "A cirurgia em si é feita com anestesia. É comum algum desconforto no pós-operatório imediato, controlado com a orientação passada após o procedimento — cada caso é acompanhado de perto nesse período.",
+  },
+  {
+    pergunta: "Quanto custa fazer lentes de contato dental ou implante?",
+    resposta:
+      "O valor varia conforme o que o seu caso precisa — número de dentes, complexidade, material. Por isso não trabalhamos com tabela fixa: o valor é apresentado depois da avaliação, junto com o plano de tratamento.",
+  },
+  {
+    pergunta: "Prótese dentária incomoda no dia a dia?",
+    resposta:
+      "Algum estranhamento nos primeiros dias é esperado, especialmente ao falar e mastigar. Incômodo constante depois desse período de adaptação não é normal, e costuma indicar que um ajuste é necessário — por isso o acompanhamento faz parte do tratamento.",
+  },
+  {
+    pergunta: "Existe atendimento de urgência?",
+    resposta:
+      "Para dor ou urgência odontológica, o mais rápido é chamar diretamente pelo WhatsApp — respondemos por ali para entender a situação e orientar os próximos passos.",
   },
 ];
 
