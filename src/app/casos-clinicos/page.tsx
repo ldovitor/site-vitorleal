@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import CtaFinal from "@/components/CtaFinal";
 import BeforeAfterHover from "@/components/BeforeAfterHover";
+import CasosGaleria from "@/components/CasosGaleria";
 import { CASOS_CLINICOS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -69,22 +70,7 @@ export default function CasosClinicosPage() {
       <section className="section bg-bege">
         <div className="container-site">
           <h2 className="text-2xl mb-8">Outros casos</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {galeria.map((caso) => (
-              <div key={caso.id}>
-                <div className="relative aspect-square rounded-lg overflow-hidden bg-areia mb-3">
-                  <Image
-                    src={caso.imagens[0]}
-                    alt={caso.titulo}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                  />
-                </div>
-                <p className="text-sm text-cinza">{caso.desafio}</p>
-              </div>
-            ))}
-          </div>
+          <CasosGaleria casos={galeria} />
         </div>
       </section>
 
