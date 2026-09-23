@@ -26,10 +26,18 @@ export default function EstruturaPage() {
       <section className="section pt-16">
         <div className="container-site max-w-2xl">
           <h1 className="text-4xl mb-5">Estrutura da Ortoface</h1>
-          <p className="text-cinza leading-relaxed">
+          <p className="text-cinza leading-relaxed mb-4">
             O ambiente pensado pra você se sentir bem antes mesmo do atendimento
             começar — recepção, sala de espera e consultórios equipados para
             planejamento de precisão.
+          </p>
+          <p className="text-cinza leading-relaxed">
+            A Ortoface foi fundada há mais de 16 anos pelo Dr. Claudio Piccoli,
+            especialista em ortodontia, e hoje reúne também o trabalho do Dr. Vitor
+            Leal (CRO-SC 20602), focado em reabilitação oral e estética dental. A
+            estrutura foi pensada pra sustentar esse tipo de atendimento — consultórios
+            equipados com scanner intraoral e radiografia digital, que permitem
+            planejar cada caso com detalhe antes de qualquer decisão clínica.
           </p>
         </div>
       </section>
