@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: ["/images/site/fachada-dia.jpg"],
   },
+  verification: {
+    google: "6WFcxiWdGP0JD2MFtt-_oHeIadnKw2vHqBUDSPv_1JI",
+  },
 };
 
 const dentistJsonLd = {
