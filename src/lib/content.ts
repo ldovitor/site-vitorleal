@@ -4,6 +4,11 @@ export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
   WHATSAPP_MESSAGE
 )}`;
 
+export const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/ortofaceclinica_/",
+  facebook: "https://www.facebook.com/clinicaortofaceitajai/",
+};
+
 // Place ID real da Clínica Ortoface no Google (extraído do widget de avaliações
 // já em uso no site antigo, odontologiavitorleal.com.br).
 export const GOOGLE_PLACE_ID = "ChIJY5uG6FzN2JQRfZM1OcRyp_U";

@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import WhatsAppClickTracker from "@/components/WhatsAppClickTracker";
-import { WHATSAPP_NUMBER } from "@/lib/content";
+import { WHATSAPP_NUMBER, SOCIAL_LINKS } from "@/lib/content";
 
 const BASE_URL = "https://odontologiavitorleal.com.br";
 const GA_MEASUREMENT_ID = "G-E88S3QJLRX";
@@ -65,6 +65,7 @@ const dentistJsonLd = {
   },
   areaServed: ["Itajaí", "Balneário Camboriú", "Camboriú"],
   medicalSpecialty: "Dentistry",
+  sameAs: [SOCIAL_LINKS.instagram, SOCIAL_LINKS.facebook],
   founder: {
     "@type": "Person",
     name: "Dr. Vitor Leal",
