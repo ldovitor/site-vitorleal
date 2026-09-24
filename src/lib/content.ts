@@ -172,12 +172,13 @@ export const TRATAMENTOS: Tratamento[] = [
     diagnostico:
       "Avaliação de proporção, cor e estrutura para entender se a resina composta atende ao que o caso precisa, sem a necessidade de um laminado cerâmico.",
     planejamento:
-      "Conteúdo completo em desenvolvimento — a estrutura desta página já segue o Protocolo Leal e será detalhada na próxima revisão de conteúdo.",
+      "O formato, o volume e o tom são definidos antes de qualquer aplicação, com base no seu rosto e na proporção natural dos seus dentes — o objetivo é uma correção discreta, não um sorriso \"novo\".",
     execucao:
-      "Conteúdo completo em desenvolvimento.",
-    resultado: "Conteúdo completo em desenvolvimento.",
+      "A resina é aplicada diretamente sobre o dente, em camadas, e esculpida à mão durante a própria consulta — sem necessidade de laboratório, o que costuma tornar o processo mais rápido que o do laminado cerâmico.",
+    resultado:
+      "Um sorriso mais uniforme, com uma técnica reversível e de menor desgaste — vale lembrar que a resina pede mais manutenção ao longo do tempo do que a cerâmica, e isso é conversado na avaliação para você decidir com essa informação em mãos.",
     cta: "Agendar avaliação para facetas em resina",
-    completo: false,
+    completo: true,
   },
   {
     slug: "proteses",
@@ -189,12 +190,15 @@ export const TRATAMENTOS: Tratamento[] = [
     problema:
       "Perda dentária parcial ou total, com impacto direto na fala e na mastigação.",
     diagnostico:
-      "Conteúdo completo em desenvolvimento — a estrutura desta página já segue o Protocolo Leal e será detalhada na próxima revisão de conteúdo.",
-    planejamento: "Conteúdo completo em desenvolvimento.",
-    execucao: "Conteúdo completo em desenvolvimento.",
-    resultado: "Conteúdo completo em desenvolvimento.",
+      "A avaliação considera os dentes remanescentes, a estrutura óssea, a saúde da gengiva e a mordida — é esse conjunto que indica o tipo de prótese adequado: removível, fixa ou sobre implante.",
+    planejamento:
+      "O tipo de prótese é definido a partir do diagnóstico, não por preferência isolada — parcial ou total, fixa, removível ou sobre implante, sempre pensando em função e naturalidade do resultado.",
+    execucao:
+      "Moldagem, provas e ajustes antes da instalação definitiva — cada etapa confirma o encaixe, a mordida e a fala antes de fechar o caso.",
+    resultado:
+      "Função de mastigação e fala restabelecida. Algum estranhamento nos primeiros dias de adaptação é esperado; incômodo que persiste depois desse período costuma indicar que um ajuste é necessário, por isso o acompanhamento faz parte do tratamento.",
     cta: "Agendar avaliação para próteses",
-    completo: false,
+    completo: true,
   },
   {
     slug: "estetica-dental",
@@ -206,12 +210,15 @@ export const TRATAMENTOS: Tratamento[] = [
     problema:
       "Quem busca um sorriso mais harmônico, mas ainda não sabe exatamente qual procedimento é o indicado para o seu caso.",
     diagnostico:
-      "Conteúdo completo em desenvolvimento — a estrutura desta página já segue o Protocolo Leal e será detalhada na próxima revisão de conteúdo.",
-    planejamento: "Conteúdo completo em desenvolvimento.",
-    execucao: "Conteúdo completo em desenvolvimento.",
-    resultado: "Conteúdo completo em desenvolvimento.",
+      "A avaliação parte do que te incomoda — cor, formato, desgaste ou alinhamento — para indicar a solução mais simples que resolve, sem partir direto para o procedimento mais complexo.",
+    planejamento:
+      "Nem todo caso de estética dental pede o mesmo caminho: às vezes um clareamento resolve, em outros a indicação caminha para facetas ou laminados. Esse direcionamento é definido na avaliação, não antes dela.",
+    execucao:
+      "Pode envolver clareamento dental supervisionado, restaurações estéticas pontuais, ou o encaminhamento para um dos outros tratamentos do Protocolo Leal, conforme o que o diagnóstico apontar.",
+    resultado:
+      "Um sorriso mais harmônico e clareza sobre qual foi o caminho certo para o seu caso — em vez de um procedimento escolhido antes de entender o que realmente era necessário.",
     cta: "Agendar avaliação",
-    completo: false,
+    completo: true,
   },
 ];
 
