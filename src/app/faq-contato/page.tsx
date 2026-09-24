@@ -6,7 +6,7 @@ import { WHATSAPP_LINK, FAQ_ITEMS } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Perguntas Frequentes e Contato | Dentista em Itajaí — Dr. Vitor Leal",
   description:
-    "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC, atendendo também Balneário Camboriú e Camboriú.",
+    "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC, atendendo também Balneário Camboriú, Camboriú, Navegantes e Itapema.",
   alternates: {
     canonical: "/faq-contato",
   },
@@ -59,7 +59,9 @@ export default function FaqContatoPage() {
             <div className="mt-10 space-y-1 text-cinza">
               <p className="font-medium text-verde">Endereço</p>
               <p>Rua Lauro Müller, 757 — Fazenda, Itajaí/SC</p>
-              <p className="text-sm">Atendemos também pacientes de Balneário Camboriú e Camboriú.</p>
+              <p className="text-sm">
+                Atendemos também pacientes de Balneário Camboriú, Camboriú, Navegantes e Itapema.
+              </p>
             </div>
           </div>
 

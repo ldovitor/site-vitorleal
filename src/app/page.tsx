@@ -272,18 +272,19 @@ export default function Home() {
       <section className="section bg-areia">
         <div className="container-site grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-bege">
-            <Image
-              src="/images/site/fachada-dia.jpg"
-              alt="Fachada da Clínica Ortoface"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+            <iframe
+              src="https://www.google.com/maps?q=Rua+Lauro+M%C3%BCller%2C+757+-+Fazenda%2C+Itaja%C3%AD+-+SC%2C+88301-401&output=embed"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Ortoface — Rua Lauro Müller, 757, Itajaí/SC"
             />
           </div>
           <div>
             <h2 className="text-3xl mb-5">Localização</h2>
             <p className="text-cinza leading-relaxed mb-2">
-              Atendimento em Itajaí, com pacientes de Balneário Camboriú e Camboriú.
+              Atendimento em Itajaí, com pacientes de Balneário Camboriú, Camboriú,
+              Navegantes e Itapema.
             </p>
             <p className="text-cinza leading-relaxed">Rua Lauro Müller, 757 — Itajaí/SC</p>
           </div>

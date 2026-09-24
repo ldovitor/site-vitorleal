@@ -63,7 +63,7 @@ const dentistJsonLd = {
     postalCode: "88301-401",
     addressCountry: "BR",
   },
-  areaServed: ["Itajaí", "Balneário Camboriú", "Camboriú"],
+  areaServed: ["Itajaí", "Balneário Camboriú", "Camboriú", "Navegantes", "Itapema"],
   medicalSpecialty: "Dentistry",
   sameAs: [SOCIAL_LINKS.instagram, SOCIAL_LINKS.facebook],
   founder: {
