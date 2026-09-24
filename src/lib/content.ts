@@ -292,13 +292,10 @@ export type CasoClinico = {
   imagens: string[];
   desafio: string;
   aprendizado?: string;
-  // Categoria provisória (para agrupar casos nas páginas de tratamento) — mesmo
-  // aviso da nota abaixo: confirmar com o Dr. Vitor antes de publicar como definitivo.
+  // Categoria confirmada com o Dr. Vitor — usada para agrupar casos nas páginas de tratamento.
   categoria?: Tratamento["categoria"];
 };
 
-// Nota: tipo exato de tratamento por caso ainda pendente de confirmação
-// (combinado com o Dr. Vitor — revisão foto a foto, agora que existe protótipo visual).
 // O campo `aprendizado` é rationale interno (por que o caso entrou no portfólio),
 // não copy voltada ao paciente — não renderizar publicamente sem reescrever antes.
 export const CASOS_CLINICOS: CasoClinico[] = [
@@ -311,7 +308,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     desafio:
       "A paciente chegou sem dentes visíveis ao sorrir, o que afetava função e confiança no dia a dia.",
     aprendizado:
-      "Mostra por que planejamento vem antes de execução — o resultado é proporção e função, não só \"dentes novos\". [tratamento exato a confirmar]",
+      "Mostra por que planejamento vem antes de execução — o resultado é proporção e função, não só \"dentes novos\".",
   },
   {
     id: "caso-b",
@@ -322,7 +319,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     desafio:
       "Paciente sem dentes à mostra no sorriso, documentada em retrato de rosto inteiro — o material mais completo do lote para mostrar impacto real na expressão, não só na boca.",
     aprendizado:
-      "Reforça que o objetivo final é a naturalidade da expressão, não apenas os dentes isoladamente. [tratamento exato a confirmar]",
+      "Reforça que o objetivo final é a naturalidade da expressão, não apenas os dentes isoladamente.",
   },
   {
     id: "caso-c",
@@ -333,7 +330,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     desafio:
       "Dentes muito desgastados e comprometidos, afetando estética e função visivelmente.",
     aprendizado:
-      "Um dos casos mais representativos do Protocolo Leal — reconstrução de função por trás do sorriso, não só estética. [tratamento exato a confirmar]",
+      "Um dos casos mais representativos do Protocolo Leal — reconstrução de função por trás do sorriso, não só estética.",
   },
   {
     id: "caso-d",
@@ -343,7 +340,7 @@ export const CASOS_CLINICOS: CasoClinico[] = [
     imagens: ["/images/casos/caso-d-pontual-boca.jpg"],
     desafio: "Dente frontal lascado/manchado, incômodo estético mesmo sendo um caso pontual.",
     aprendizado:
-      "Mostra que nem todo caso precisa de reabilitação ampla — reforça o hook \"o que o seu caso realmente precisa\". [tratamento exato a confirmar]",
+      "Mostra que nem todo caso precisa de reabilitação ampla — reforça o hook \"o que o seu caso realmente precisa\".",
   },
   {
     id: "caso-e",
