@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import WhatsAppClickTracker from "@/components/WhatsAppClickTracker";
 import { WHATSAPP_NUMBER, SOCIAL_LINKS } from "@/lib/content";
 
-const BASE_URL = "https://odontologiavitorleal.com.br";
+const BASE_URL = "https://www.odontologiavitorleal.com.br";
 const GA_MEASUREMENT_ID = "G-E88S3QJLRX";
 const SITE_TITLE = "Dr. Vitor Leal | Clínica Ortoface — Reabilitação Oral em Itajaí";
 const SITE_DESCRIPTION =

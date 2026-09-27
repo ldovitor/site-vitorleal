@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { TRATAMENTOS } from "@/lib/content";
 import { BLOG_POSTS } from "@/lib/blog";
 
-const BASE_URL = "https://odontologiavitorleal.com.br";
+const BASE_URL = "https://www.odontologiavitorleal.com.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

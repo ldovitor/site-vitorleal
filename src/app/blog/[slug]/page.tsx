@@ -5,7 +5,7 @@ import CtaFinal from "@/components/CtaFinal";
 import { BLOG_POSTS } from "@/lib/blog";
 import { TRATAMENTOS, WHATSAPP_LINK } from "@/lib/content";
 
-const BASE_URL = "https://odontologiavitorleal.com.br";
+const BASE_URL = "https://www.odontologiavitorleal.com.br";
 
 function estimateReadingMinutes(post: (typeof BLOG_POSTS)[number]) {
   const texto = [
