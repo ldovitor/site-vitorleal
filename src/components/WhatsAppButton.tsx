@@ -1,6 +1,15 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import { WHATSAPP_LINK } from "@/lib/content";
 
 export default function WhatsAppButton() {
+  const pathname = usePathname();
+
+  // /links já tem seu próprio botão de WhatsApp na lista de links — o
+  // flutuante ficaria redundante por cima dos botões.
+  if (pathname === "/links") return null;
+
   return (
     <a
       href={WHATSAPP_LINK}

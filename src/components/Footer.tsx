@@ -7,6 +7,10 @@ import { NAV_LINKS, WHATSAPP_LINK, SOCIAL_LINKS } from "@/lib/content";
 export default function Footer() {
   const pathname = usePathname();
 
+  // Mesma lógica do Header: /links é a página de "link na bio" e fica sem
+  // o rodapé do site.
+  if (pathname === "/links") return null;
+
   // Mesmo caso do Header: clicar num link para a rota atual não navega nem
   // rola — força a rolagem pro topo (ex.: "Início" no rodapé, página rolada).
   const scrollToTopIfSameRoute = (href: string) => (e: React.MouseEvent) => {

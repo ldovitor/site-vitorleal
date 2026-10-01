@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "/blog", priority: 0.7 },
     { route: "/sobre", priority: 0.7 },
     { route: "/faq-contato", priority: 0.7 },
+    { route: "/links", priority: 0.3 },
     { route: "/politica-de-privacidade", priority: 0.2 },
   ].map(({ route, priority }) => ({
     url: `${BASE_URL}${route}`,
