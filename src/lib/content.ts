@@ -12,7 +12,11 @@ export const SOCIAL_LINKS = {
 // Place ID real da Clínica Ortoface no Google (extraído do widget de avaliações
 // já em uso no site antigo, odontologiavitorleal.com.br).
 export const GOOGLE_PLACE_ID = "ChIJY5uG6FzN2JQRfZM1OcRyp_U";
-export const GOOGLE_REVIEWS_URL = `https://www.google.com/maps/place/?q=place_id:${GOOGLE_PLACE_ID}`;
+// Formato oficial da Maps URL API (query + query_place_id) — mais confiável em
+// celular do que "?q=place_id:..." sozinho, que às vezes abre no lugar errado.
+export const GOOGLE_REVIEWS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  "Clínica Ortoface"
+)}&query_place_id=${GOOGLE_PLACE_ID}`;
 export const GOOGLE_REVIEWS_COUNT = 58;
 
 // Avaliações reais de pacientes no Google, copiadas do site atual (mesma fonte;
