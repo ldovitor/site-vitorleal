@@ -9,6 +9,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
+  // /links é uma página de "link na bio" para o Instagram — fica sem o
+  // cabeçalho/menu do site, como uma página tipo Linktree.
+  if (pathname === "/links") return null;
+
   // Clicar num link para a rota em que você já está não navega nem rola —
   // aqui forçamos a rolagem pro topo nesse caso (ex.: "Início" com a página
   // já rolada pra baixo).
