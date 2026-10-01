@@ -64,7 +64,7 @@ function Icon({ name }: { name: LinkItem["icon"] }) {
 
 export default function LinksPage() {
   return (
-    <main className="min-h-screen bg-verde flex flex-col items-center px-5 py-14">
+    <main className="min-h-screen bg-black flex flex-col items-center px-5 py-14">
       <div className="w-full max-w-sm flex flex-col items-center">
         <div className="relative w-28 h-28 rounded-full overflow-hidden ring-2 ring-areia/20">
           <Image
