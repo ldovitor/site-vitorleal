@@ -169,8 +169,8 @@ export const TRATAMENTOS: Tratamento[] = [
     nome: "Facetas em Resina Composta",
     categoria: "Estética Dental",
     resumoCard:
-      "Alternativa mais conservadora aos laminados cerâmicos, reversível e com menor desgaste.",
-    title: "Facetas em Resina Composta em Itajaí | Dr. Vitor Leal",
+      "Faceta ou laminado em resina: alternativa mais conservadora aos laminados cerâmicos, reversível e com menor desgaste.",
+    title: "Facetas (Laminados) em Resina Composta em Itajaí | Dr. Vitor Leal",
     problema:
       "Pequenas imperfeições, desgastes ou desalinhamentos leves — casos em que uma correção mais conservadora já resolve.",
     diagnostico:

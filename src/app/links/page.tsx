@@ -14,12 +14,13 @@ export const metadata: Metadata = {
 type LinkItem = {
   label: string;
   href: string;
-  icon: "whatsapp" | "site" | "instagram" | "google";
+  icon: "whatsapp" | "site" | "instagram" | "google" | "blog";
 };
 
 const LINKS: LinkItem[] = [
   { label: "Agendar no WhatsApp", href: WHATSAPP_LINK, icon: "whatsapp" },
   { label: "Visitar o site", href: "/", icon: "site" },
+  { label: "Dúvidas sobre tratamentos (blog)", href: "/blog", icon: "blog" },
   { label: "Ver no Instagram", href: SOCIAL_LINKS.instagram, icon: "instagram" },
   { label: "Avaliações no Google", href: GOOGLE_REVIEWS_URL, icon: "google" },
 ];
@@ -51,6 +52,21 @@ function Icon({ name }: { name: LinkItem["icon"] }) {
         >
           <circle cx="12" cy="12" r="9" />
           <path d="M3 12h18M12 3c2.4 2.5 3.7 5.7 3.7 9s-1.3 6.5-3.7 9c-2.4-2.5-3.7-5.7-3.7-9S9.6 5.5 12 3Z" />
+        </svg>
+      );
+    case "blog":
+      return (
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="w-5 h-5 shrink-0"
+        >
+          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z" />
+          <path d="M4 21.5A2.5 2.5 0 0 1 6.5 19H20" />
         </svg>
       );
     case "google":

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CtaFinal from "@/components/CtaFinal";
 import { TRATAMENTOS, WHATSAPP_LINK, CASOS_CLINICOS } from "@/lib/content";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export function generateStaticParams() {
   return TRATAMENTOS.map((t) => ({ slug: t.slug }));
@@ -37,6 +38,7 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
   // Categoria dos casos ainda é provisória (ver nota em content.ts) — assim que o
   // Dr. Vitor confirmar o tratamento exato de cada caso, revisar esse cruzamento.
   const casosRelacionados = CASOS_CLINICOS.filter((c) => c.categoria === tratamento.categoria).slice(0, 3);
+  const artigosRelacionados = BLOG_POSTS.filter((p) => p.tratamentoRelacionado === tratamento.slug);
 
   return (
     <>
@@ -74,6 +76,22 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
           </div>
         </div>
       </section>
+
+      {artigosRelacionados.length > 0 && (
+        <section className="section pt-0">
+          <div className="container-site max-w-2xl">
+            <h2 className="text-xl mb-4">Para ler antes da avaliação</h2>
+            <div className="space-y-4">
+              {artigosRelacionados.map((p) => (
+                <Link key={p.slug} href={`/blog/${p.slug}`} className="block group">
+                  <p className="text-verde group-hover:text-bronze transition-colors">{p.title}</p>
+                  <p className="text-sm text-cinza">{p.resumo}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {casosRelacionados.length > 0 && (
         <section className="section bg-bege">
