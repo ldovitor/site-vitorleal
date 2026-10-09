@@ -319,9 +319,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "clareamento-dental-quem-pode-fazer",
-    title: "Clareamento dental: quem pode fazer e o que esperar do resultado",
+    title: "Clareamento dental convencional: quem pode fazer e o que esperar do resultado",
     metaDescription:
-      "Nem todo escurecimento dental responde da mesma forma ao clareamento. Entenda quem costuma se beneficiar e como o resultado é avaliado.",
+      "O que é o clareamento dental convencional? Nem todo escurecimento dental responde da mesma forma. Entenda quem costuma se beneficiar e como o resultado é avaliado.",
     dataISO: "2026-09-23",
     dataExibicao: "23 de setembro de 2026",
     resumo: "Clareamento funciona bem para a maioria — mas não é a resposta para todo tipo de escurecimento dental.",
