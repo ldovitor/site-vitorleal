@@ -10,6 +10,19 @@ const nextConfig: NextConfig = {
     // pequeno por enquanto.
     unoptimized: true,
   },
+  // Fotos do site ficam em cache no navegador por 30 dias (o Google PageSpeed
+  // apontava cache curto). Se uma foto for trocada mantendo o mesmo nome, ela
+  // pode demorar até 30 dias para atualizar para quem já visitou: prefira nomes novos.
+  async headers() {
+    return [
+      {
+        source: "/images/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=2592000, stale-while-revalidate=86400" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

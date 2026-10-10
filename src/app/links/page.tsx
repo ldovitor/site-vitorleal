@@ -84,7 +84,7 @@ export default function LinksPage() {
       <div className="w-full max-w-sm flex flex-col items-center">
         <div className="relative w-28 h-28 rounded-full overflow-hidden ring-2 ring-areia/20">
           <Image
-            src="/images/site/hero-dr-vitor-pb.jpg"
+            src="/images/site/hero-dr-vitor-pb-256.jpg"
             alt="Dr. Vitor Leal"
             fill
             sizes="112px"
