@@ -91,7 +91,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-areia/10">
-        <div className="container-site py-6 text-xs text-areia/50 flex flex-wrap gap-x-4 gap-y-2 justify-between">
+        <div className="container-site py-6 text-xs text-areia/60 flex flex-wrap gap-x-4 gap-y-2 justify-between">
           <span>© {new Date().getFullYear()} Dr. Vitor Leal — CRO-SC 20602. Todos os direitos reservados.</span>
           <Link
             href="/politica-de-privacidade"
