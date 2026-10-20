@@ -376,4 +376,65 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     tratamentoRelacionado: "estetica-dental",
   },
+  {
+    slug: "implante-dentario-imediato-mesmo-dia-da-extracao",
+    title: "Implante dentário imediato: dá para colocar no mesmo dia da extração?",
+    metaDescription:
+      "Implante imediato é aquele instalado no mesmo dia em que o dente é removido. Entenda quando essa abordagem costuma ser possível e por que nem todo caso é indicado.",
+    dataISO: "2026-10-20",
+    dataExibicao: "20 de outubro de 2026",
+    resumo: "Em alguns casos é possível; em outros, esperar a cicatrização é o caminho mais seguro.",
+    respostaDireta:
+      "Em alguns casos é possível instalar o implante no mesmo dia em que o dente é removido, mas depende das condições do osso, da gengiva e da região — por isso só a avaliação, com exames de imagem, mostra se o seu caso permite ou se o mais seguro é esperar a cicatrização antes.",
+    resumoRapido: [
+      "Implante imediato é o instalado no mesmo dia da extração do dente.",
+      "Depende da quantidade e da qualidade do osso, do estado da gengiva e da ausência de infecção ativa na região.",
+      "Quando não é indicado, o caminho costuma ser extrair, deixar cicatrizar e instalar o implante depois.",
+      "A prótese definitiva, em geral, só entra depois que o implante se integra ao osso.",
+      "A decisão é tomada na avaliação, com exame clínico e de imagem.",
+    ],
+    corpo: [
+      {
+        paragrafos: [
+          "Quem precisa extrair um dente costuma perguntar se dá para já sair com o implante colocado, sem esperar meses. A resposta honesta é: às vezes sim, às vezes não — e o que decide isso é o estado da região, não a vontade de acelerar o tratamento.",
+        ],
+      },
+      {
+        titulo: "O que é o implante imediato",
+        paragrafos: [
+          "É o implante instalado no mesmo procedimento em que o dente é removido, aproveitando o espaço deixado pela raiz. A ideia é reduzir etapas, mas isso só é uma vantagem quando as condições da região permitem fazer com segurança.",
+        ],
+      },
+      {
+        titulo: "De que depende",
+        paragrafos: ["De forma geral, o profissional avalia:"],
+        lista: [
+          "Se há osso suficiente, com boa qualidade, para dar estabilidade ao implante",
+          "O estado da gengiva ao redor do dente",
+          "Se existe infecção ativa na região (o que costuma exigir tratar antes)",
+          "A posição do dente e a forma como você morde",
+          "Condições de saúde geral e hábitos, como o cigarro",
+        ],
+      },
+      {
+        titulo: "Quando esperar costuma ser melhor",
+        paragrafos: [
+          "Se há infecção, perda importante de osso ou pouca estrutura de apoio, instalar o implante no mesmo dia pode aumentar o risco. Nesses casos, o mais comum é extrair o dente, deixar a região cicatrizar (e, se for preciso, fazer um enxerto) e só então instalar o implante. Esperar não é atraso: é parte do planejamento.",
+        ],
+      },
+      {
+        titulo: "E o dente provisório e a prótese final",
+        paragrafos: [
+          "Mesmo no implante imediato, a prótese definitiva em geral só é feita depois que o implante se integra ao osso. Se um dente provisório é possível ou não, e como ele é feito, também depende do seu caso.",
+        ],
+      },
+      {
+        titulo: "Como saber se o seu caso permite",
+        paragrafos: [
+          "Só a avaliação responde: exame clínico e exames de imagem mostram a condição do osso e da região, e a partir deles o plano é definido. Chegando à avaliação com essa dúvida, você já ajuda a orientar a conversa.",
+        ],
+      },
+    ],
+    tratamentoRelacionado: "implantes-dentarios",
+  },
 ];
