@@ -158,7 +158,7 @@ export const TRATAMENTOS: Tratamento[] = [
     planejamento:
       "A quantidade e a posição dos implantes, o tipo de prótese e a sequência das etapas são planejados antes da cirurgia, para que função de mastigação e estética sejam pensadas juntas. As etapas são explicadas antes de começar.",
     execucao:
-      "Os implantes são instalados e, depois do período de cicatrização definido para o seu caso, a prótese é confeccionada e instalada em etapas, com provas e ajustes de encaixe, mordida e fala.",
+      "Os implantes são instalados e a prótese é confeccionada e instalada em etapas, com provas e ajustes de encaixe, mordida e fala. Em casos selecionados, quando as condições clínicas permitem, é possível instalar uma prótese provisória fixa logo após a cirurgia (carga imediata); isso é definido na avaliação e não é indicado para todos. Nos demais casos, a prótese é instalada depois do período de cicatrização definido para o seu caso.",
     resultado:
       "Uma prótese fixa apoiada em implantes, com estabilidade que costuma ser maior que a de uma dentadura removível, conforme cada caso. Ela exige higiene cuidadosa e consultas de manutenção regulares, e o acompanhamento faz parte do tratamento.",
     cta: "Agendar avaliação para prótese protocolo",
