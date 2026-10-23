@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFinal from "@/components/CtaFinal";
 import { TRATAMENTOS, WHATSAPP_LINK, CASOS_CLINICOS } from "@/lib/content";
 import { BLOG_POSTS } from "@/lib/blog";
@@ -44,6 +45,13 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
     <>
       <section className="section pt-16 bg-bege">
         <div className="container-site max-w-2xl">
+          <Breadcrumbs
+            itens={[
+              { nome: "Início", href: "/" },
+              { nome: "Tratamentos", href: "/tratamentos" },
+              { nome: tratamento.nome },
+            ]}
+          />
           <p className="text-sm text-bronze mb-3">{tratamento.categoria}</p>
           <h1 className="text-4xl mb-4">{tratamento.nome}</h1>
           {!tratamento.completo && (
