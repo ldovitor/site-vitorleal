@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFinal from "@/components/CtaFinal";
 import { BLOG_POSTS } from "@/lib/blog";
 import { TRATAMENTOS, WHATSAPP_LINK } from "@/lib/content";
@@ -71,6 +72,13 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
 
       <section className="section pt-16 bg-bege">
         <div className="container-site max-w-2xl">
+          <Breadcrumbs
+            itens={[
+              { nome: "Início", href: "/" },
+              { nome: "Blog", href: "/blog" },
+              { nome: post.title },
+            ]}
+          />
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-bronze mb-3">
             {tratamento && (
               <span className="uppercase tracking-wide font-medium">{tratamento.categoria}</span>
