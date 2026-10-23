@@ -145,6 +145,26 @@ export const TRATAMENTOS: Tratamento[] = [
     completo: true,
   },
   {
+    slug: "protese-protocolo-sobre-implante",
+    nome: "Prótese Protocolo sobre Implante",
+    categoria: "Implantes",
+    resumoCard:
+      "Prótese fixa apoiada em implantes para quem perdeu todos ou quase todos os dentes, com indicação definida em avaliação individual.",
+    title: "Prótese Protocolo sobre Implante em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
+    problema:
+      "A perda de todos ou quase todos os dentes, ou o uso de uma dentadura que se movimenta, pode afetar a mastigação e a fala. Existe a opção de prótese fixa sobre implantes, e a indicação depende de cada caso.",
+    diagnostico:
+      "A indicação depende de uma avaliação individual: exames de imagem, análise da estrutura óssea, da saúde da gengiva e da mordida. Nem todo caso comporta uma prótese protocolo, e é no diagnóstico que isso é definido.",
+    planejamento:
+      "A quantidade e a posição dos implantes, o tipo de prótese e a sequência das etapas são planejados antes da cirurgia, para que função de mastigação e estética sejam pensadas juntas. As etapas são explicadas antes de começar.",
+    execucao:
+      "Os implantes são instalados e, depois do período de cicatrização definido para o seu caso, a prótese é confeccionada e instalada em etapas, com provas e ajustes de encaixe, mordida e fala.",
+    resultado:
+      "Uma prótese fixa apoiada em implantes, com estabilidade que costuma ser maior que a de uma dentadura removível, conforme cada caso. Ela exige higiene cuidadosa e consultas de manutenção regulares, e o acompanhamento faz parte do tratamento.",
+    cta: "Agendar avaliação para prótese protocolo",
+    completo: true,
+  },
+  {
     slug: "reabilitacao-oral",
     nome: "Reabilitação Oral",
     categoria: "Reabilitação Oral",
