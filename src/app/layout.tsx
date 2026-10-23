@@ -57,7 +57,6 @@ const dentistJsonLd = {
   image: `${BASE_URL}/images/site/fachada-dia.jpg`,
   url: BASE_URL,
   telephone: `+${WHATSAPP_NUMBER}`,
-  priceRange: "$$",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Rua Lauro Müller, 757 — Fazenda",

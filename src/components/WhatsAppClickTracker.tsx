@@ -24,7 +24,22 @@ function origemDoClique(link: Element): string {
 export default function WhatsAppClickTracker() {
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      const target = (e.target as HTMLElement)?.closest?.('a[href*="wa.me"]');
+      const target = (e.target as HTMLElement)?.closest?.('a[href*="wa.me"]') as HTMLAnchorElement | null;
+      if (target) {
+        // Acrescenta à mensagem a página de origem (ex.: "Ref: site/blog/x"), para a
+        // recepção ligar o contato ao canal "Site" no OrtoClean.
+        try {
+          const url = new URL(target.href);
+          const texto = url.searchParams.get("text") ?? "";
+          if (texto && !texto.includes("Ref: site")) {
+            const pagina = window.location.pathname.replace(/\/$/, "");
+            url.searchParams.set("text", `${texto} (Ref: site${pagina})`);
+            target.href = url.toString();
+          }
+        } catch {
+          // mantém o link original
+        }
+      }
       if (target && typeof window.gtag === "function") {
         window.gtag("event", "whatsapp_click", {
           event_category: "engagement",
