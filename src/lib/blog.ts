@@ -77,9 +77,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "faceta-em-resina-ou-laminado-ceramico-qual-a-diferenca",
-    title: "Faceta em resina ou laminado cerâmico: qual a diferença?",
+    title: "Faceta (laminado) em resina ou cerâmico: qual a diferença?",
     metaDescription:
-      "Faceta em resina composta e laminado cerâmico resolvem problemas parecidos de formas diferentes. Entenda quando cada um é indicado.",
+      "Faceta em resina composta (também chamada de laminado em resina) e laminado cerâmico resolvem problemas parecidos de formas diferentes. Entenda quando cada um é indicado.",
     dataISO: "2026-09-08",
     dataExibicao: "8 de setembro de 2026",
     resumo: "Nenhum dos dois é \"melhor\" de forma absoluta — a indicação certa depende do que o seu caso precisa.",
@@ -94,7 +94,7 @@ export const BLOG_POSTS: BlogPost[] = [
     corpo: [
       {
         paragrafos: [
-          "É comum chegar à avaliação já com essa dúvida: faceta em resina ou laminado cerâmico? Os dois resolvem problemas parecidos — pequenas imperfeições, desalinhamento leve, cor irregular — mas de formas diferentes, e a escolha não é só estética.",
+          "É comum chegar à avaliação já com essa dúvida: faceta em resina (também chamada de laminado em resina) ou laminado cerâmico? Os dois resolvem problemas parecidos — pequenas imperfeições, desalinhamento leve, cor irregular — mas de formas diferentes, e a escolha não é só estética.",
         ],
       },
       {
@@ -326,7 +326,7 @@ export const BLOG_POSTS: BlogPost[] = [
     dataExibicao: "23 de setembro de 2026",
     resumo: "Clareamento funciona bem para a maioria — mas não é a resposta para todo tipo de escurecimento dental.",
     respostaDireta:
-      "O clareamento dental costuma funcionar bem para escurecimento causado por hábitos (café, cigarro, envelhecimento natural do esmalte), mas manchas de origem interna ao dente — por trauma ou por certos medicamentos, por exemplo — podem responder menos, e às vezes pedem outra abordagem.",
+      "O clareamento dental convencional costuma funcionar bem para escurecimento causado por hábitos (café, cigarro, envelhecimento natural do esmalte), mas manchas de origem interna ao dente — por trauma ou por certos medicamentos, por exemplo — podem responder menos, e às vezes pedem outra abordagem.",
     resumoRapido: [
       "Funciona bem para escurecimento por hábitos (café, vinho, cigarro) e envelhecimento natural do esmalte.",
       "Manchas de origem interna (trauma, alguns medicamentos) podem responder menos ao clareamento convencional.",
@@ -336,7 +336,7 @@ export const BLOG_POSTS: BlogPost[] = [
     corpo: [
       {
         paragrafos: [
-          "Clareamento é, muitas vezes, o primeiro tratamento que vem à cabeça de quem quer um sorriso mais uniforme — e faz sentido: é um dos procedimentos mais conservadores que existem. Mas nem todo tipo de escurecimento responde da mesma forma.",
+          "O clareamento dental convencional é, muitas vezes, o primeiro tratamento que vem à cabeça de quem quer um sorriso mais uniforme — e faz sentido: é um dos procedimentos mais conservadores que existem. Mas nem todo tipo de escurecimento responde da mesma forma.",
         ],
       },
       {
