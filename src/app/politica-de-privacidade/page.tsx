@@ -35,9 +35,11 @@ export default function PoliticaPrivacidadePage() {
           <li>
             <strong>Uso do site:</strong> usamos o Google Analytics para medir visitas
             (páginas vistas, cidade aproximada, tipo de aparelho e cliques nos botões de
-            WhatsApp). Essas informações são estatísticas e o Google grava cookies no seu
-            navegador para isso. Você pode apagar os cookies nas configurações do navegador
-            e o site continua funcionando. Os mapas do Google exibidos em algumas páginas
+            WhatsApp). Essas informações são estatísticas. O Analytics só é ativado se você
+            clicar em &quot;Aceitar&quot; no aviso de cookies; se recusar, nada é enviado a ele. O
+            Google grava cookies no seu navegador para isso, e você pode apagá-los nas
+            configurações do navegador a qualquer momento. O site funciona normalmente com
+            ou sem o aceite. Os mapas do Google exibidos em algumas páginas
             também podem gravar cookies.
           </li>
         </ul>
