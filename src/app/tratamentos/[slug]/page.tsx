@@ -129,6 +129,19 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
         </section>
       )}
 
+      <section className="section pt-0">
+        <div className="container-site max-w-2xl">
+          <h2 className="text-xl mb-4">Outros tratamentos</h2>
+          <div className="space-y-4">
+            {TRATAMENTOS.filter((t) => t.slug !== tratamento.slug).map((t) => (
+              <Link key={t.slug} href={`/tratamentos/${t.slug}`} className="block group">
+                <p className="text-verde group-hover:text-bronze transition-colors">{t.nome}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CtaFinal />
     </>
   );

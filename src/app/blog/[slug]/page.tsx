@@ -41,7 +41,14 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
   if (!post) notFound();
 
   const tratamento = TRATAMENTOS.find((t) => t.slug === post.tratamentoRelacionado);
-  const relacionados = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 3);
+  // Mesmo tratamento primeiro, depois os mais recentes: assim todo artigo recebe links internos.
+  const relacionados = BLOG_POSTS.filter((p) => p.slug !== post.slug)
+    .sort((a, b) => {
+      const mesmoA = a.tratamentoRelacionado === post.tratamentoRelacionado ? 1 : 0;
+      const mesmoB = b.tratamentoRelacionado === post.tratamentoRelacionado ? 1 : 0;
+      return mesmoB - mesmoA || b.dataISO.localeCompare(a.dataISO);
+    })
+    .slice(0, 3);
   const minutosLeitura = estimateReadingMinutes(post);
 
   const articleJsonLd = {
