@@ -16,6 +16,9 @@ export default function CtaFinal() {
         >
           Agendar avaliação
         </a>
+        <p className="text-areia/75 text-sm mt-4">
+          Respondemos pelo WhatsApp em até 1 hora, em horário de atendimento.
+        </p>
       </div>
     </section>
   );
