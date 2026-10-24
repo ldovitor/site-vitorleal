@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Script de apoio local (capturas de tela), fora do site.
+    "screenshot.js",
   ]),
 ]);
 

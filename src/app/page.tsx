@@ -5,7 +5,6 @@ import FaqAccordion from "@/components/FaqAccordion";
 import CtaFinal from "@/components/CtaFinal";
 import {
   CASOS_CLINICOS,
-  TRATAMENTOS,
   WHATSAPP_LINK,
   REVIEWS,
   GOOGLE_REVIEWS_URL,
