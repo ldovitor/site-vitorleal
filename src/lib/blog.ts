@@ -401,11 +401,11 @@ export const BLOG_POSTS: BlogPost[] = [
       "O que é clareamento dental convencional? Veja quando costuma funcionar bem e quando pode não bastar. Dr. Vitor Leal, CRO-SC 20602, em Itajaí/SC.",
     dataISO: "2026-09-23",
     dataExibicao: "23 de setembro de 2026",
-    resumo: "Clareamento funciona bem para a maioria — mas não é a resposta para todo tipo de escurecimento dental.",
+    resumo: "O clareamento pode ser uma opção para alguns tipos de escurecimento, mas não é indicado para todos os casos.",
     respostaDireta:
-      "O clareamento dental convencional costuma funcionar bem para escurecimento causado por hábitos (café, cigarro, envelhecimento natural do esmalte), mas manchas de origem interna ao dente — por trauma ou por certos medicamentos, por exemplo — podem responder menos, e às vezes pedem outra abordagem.",
+      "Em geral, o clareamento dental convencional é considerado quando o escurecimento é causado por manchas superficiais, como alimentos, bebidas ou fumo, mas a indicação depende da avaliação do dentista; manchas de origem interna ao dente — por trauma ou por certos medicamentos, por exemplo — podem responder menos, e às vezes pedem outra abordagem.",
     resumoRapido: [
-      "Funciona bem para escurecimento por hábitos (café, vinho, cigarro) e envelhecimento natural do esmalte.",
+      "Costuma ser considerado para escurecimento por hábitos (café, vinho, cigarro) e envelhecimento natural do esmalte.",
       "Manchas de origem interna (trauma, alguns medicamentos) podem responder menos ao clareamento convencional.",
       "Sensibilidade nos dias seguintes é comum e costuma passar — é acompanhada no seu retorno.",
       "Evitar alimentos e bebidas muito pigmentados nos primeiros dias ajuda a manter o resultado.",
@@ -413,13 +413,13 @@ export const BLOG_POSTS: BlogPost[] = [
     corpo: [
       {
         paragrafos: [
-          "O clareamento dental convencional é, muitas vezes, o primeiro tratamento que vem à cabeça de quem quer um sorriso mais uniforme — e faz sentido: é um dos procedimentos mais conservadores que existem. Mas nem todo tipo de escurecimento responde da mesma forma.",
+          "O clareamento dental convencional é, muitas vezes, o primeiro tratamento que vem à cabeça de quem quer um sorriso mais uniforme — e faz sentido: quando indicado após avaliação, costuma ser considerado um procedimento conservador. Mas nem todo tipo de escurecimento responde da mesma forma.",
         ],
       },
       {
-        titulo: "Quando costuma funcionar bem",
+        titulo: "Quando o clareamento costuma ser considerado",
         paragrafos: [
-          "Escurecimento causado por hábitos do dia a dia — café, vinho, cigarro — ou pelo envelhecimento natural do esmalte costuma responder bem ao clareamento.",
+          "Escurecimento causado por hábitos do dia a dia — café, vinho, cigarro — ou pelo envelhecimento natural do esmalte costuma ser um caso em que o clareamento é considerado, após a avaliação.",
         ],
       },
       {
@@ -445,9 +445,16 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        titulo: "O que dizem os estudos sobre sensibilidade",
+        paragrafos: [
+          "Uma revisão sistemática com meta-análise em rede (Cordeiro, 2025, Jpn Dent Sci Rev; localizada no PubMed) analisou o clareamento caseiro com peróxido de carbamida. Os autores concluem que concentrações menores reduzem o risco de sensibilidade, e que a eficácia seria comparável à de concentrações maiores. Esse último ponto depende da medida de cor usada: em uma das medidas não houve diferença entre as concentrações, e em outra houve. A maioria dos estudos incluídos tinha risco de viés alto, então os resultados devem ser lidos com cautela. Eles descrevem grupos de pacientes e não valem automaticamente para o clareamento feito no consultório. A concentração e o método são definidos pelo dentista, na avaliação.",
+        ],
+      },
+      {
         titulo: "Por que isso é avaliado antes",
         paragrafos: [
-          "Antes de indicar clareamento ou qualquer outro tratamento estético, a avaliação identifica a causa do escurecimento — é isso que define se o clareamento resolve, ou se o seu caso pede outro caminho dentro da estética dental.",
+          "Antes de indicar clareamento ou qualquer outro tratamento estético, a avaliação identifica a causa do escurecimento — é isso que define se o clareamento é indicado, ou se o seu caso pede outro caminho dentro da estética dental.",
+          "Os estudos científicos descrevem resultados de grupos de pacientes e não permitem prever o que acontecerá em um caso individual; a indicação é definida na avaliação clínica.",
         ],
       },
     ],
