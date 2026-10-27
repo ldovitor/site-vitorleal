@@ -76,7 +76,7 @@ export default function CookieBanner() {
     >
       <div className="container-site py-4 flex flex-col md:flex-row md:items-center gap-4 justify-between">
         <p className="text-sm text-verde/90 max-w-3xl">
-          Usamos cookies para medir o uso do site e dos nossos anúncios. A escolha é sua: o
+          Usamos cookies para medir o uso do site e dos nossos anúncios, se você permitir. A escolha é sua: o
           site funciona do mesmo jeito se você recusar. Saiba mais na{" "}
           <Link href="/politica-de-privacidade" className="underline">
             política de privacidade

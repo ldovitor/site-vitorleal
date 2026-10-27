@@ -29,7 +29,7 @@ export default function PoliticaPrivacidadePage() {
           <li>
             <strong>Uso do site:</strong> usamos o Google Analytics para medir visitas
             (páginas vistas, cidade aproximada, tipo de aparelho e cliques nos botões de
-            WhatsApp). Essas informações são estatísticas e usam cookies do Google, que só são ativados depois que você clica em “Aceitar” no aviso de cookies do site. Você pode mudar a escolha a qualquer momento em “Preferências de cookies”, no rodapé.
+            WhatsApp). Essas informações são estatísticas. Os cookies do Google só são gravados no seu aparelho depois que você clica em “Aceitar” no aviso de cookies do site. Se você recusar, o Google pode receber sinais básicos da visita, sem cookies e sem identificadores pessoais, para estimativas agregadas. Você pode mudar a escolha a qualquer momento em “Preferências de cookies”, no rodapé.
           </li>
         </ul>
         <h2 className="text-2xl text-verde pt-2">Para que usamos</h2>
