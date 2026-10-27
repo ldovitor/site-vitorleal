@@ -174,6 +174,39 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
             </div>
           )}
 
+          {post.referencias && post.referencias.length > 0 && (
+            <div className="pt-6 border-t border-verde/10">
+              <h2 className="text-lg font-medium text-verde mb-2">Referências científicas relacionadas</h2>
+              <p className="text-sm text-cinza mb-3">
+                Estudos indexados no PubMed sobre o tema, indicados para quem quer se aprofundar. Eles não representam
+                promessa de resultado: cada caso é definido em avaliação individual.
+              </p>
+              <ol className="list-decimal pl-5 space-y-2 text-sm text-cinza">
+                {post.referencias.map((r) => (
+                  <li key={r.pmid}>
+                    {r.autores} {r.titulo} <em>{r.revista}</em>. {r.ano};{r.volume}.{" "}
+                    <a
+                      href={`https://doi.org/${r.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-verde underline hover:text-bronze transition-colors"
+                    >
+                      DOI
+                    </a>{" "}·{" "}
+                    <a
+                      href={`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-verde underline hover:text-bronze transition-colors"
+                    >
+                      PubMed
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
           <div className="pt-6 flex flex-wrap gap-4">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Agendar avaliação
