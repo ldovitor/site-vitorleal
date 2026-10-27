@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import Image from "next/image";
 import { WHATSAPP_LINK, SOCIAL_LINKS, GOOGLE_REVIEWS_URL } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Links — Dr. Vitor Leal | Clínica Ortoface",
   description:
     "Agende sua avaliação, acesse o site e encontre a Clínica Ortoface, em Itajaí/SC.",
-  alternates: {
-    canonical: "/links",
-  },
-};
+  path: "/links",
+});
 
 type LinkItem = {
   label: string;

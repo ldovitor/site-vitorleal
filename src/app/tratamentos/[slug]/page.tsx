@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFinal from "@/components/CtaFinal";
 import { TRATAMENTOS, WHATSAPP_LINK, CASOS_CLINICOS } from "@/lib/content";
 import { BLOG_POSTS } from "@/lib/blog";
+import { metaPagina } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return TRATAMENTOS.map((t) => ({ slug: t.slug }));
@@ -14,13 +15,11 @@ export async function generateMetadata(props: PageProps<"/tratamentos/[slug]">) 
   const { slug } = await props.params;
   const tratamento = TRATAMENTOS.find((t) => t.slug === slug);
   if (!tratamento) return {};
-  return {
+  return metaPagina({
     title: tratamento.title,
     description: tratamento.metaDescription ?? tratamento.resumoCard,
-    alternates: {
-      canonical: `/tratamentos/${tratamento.slug}`,
-    },
-  };
+    path: `/tratamentos/${tratamento.slug}`,
+  });
 }
 
 const ETAPAS = [

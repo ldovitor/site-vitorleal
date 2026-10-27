@@ -1,16 +1,15 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import ProtocoloTimeline from "@/components/ProtocoloTimeline";
 import CtaFinal from "@/components/CtaFinal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Sobre o Dr. Vitor Leal | Clínica Ortoface, Itajaí/SC",
   description:
     "Cirurgião-dentista CRO-SC 20602, formado pela Uniavan, especialista em Dentística Restauradora, sócio da Clínica Ortoface em Itajaí/SC.",
-  alternates: {
-    canonical: "/sobre",
-  },
-};
+  path: "/sobre",
+});
 
 export default function SobrePage() {
   return (

@@ -1,16 +1,15 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import FaqAccordion from "@/components/FaqAccordion";
 import { WHATSAPP_LINK, FAQ_ITEMS } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Perguntas Frequentes e Contato | Dentista em Itajaí",
   description:
     "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC, atendendo também Balneário Camboriú, Camboriú, Navegantes e Itapema.",
-  alternates: {
-    canonical: "/faq-contato",
-  },
-};
+  path: "/faq-contato",
+});
 
 const faqJsonLd = {
   "@context": "https://schema.org",

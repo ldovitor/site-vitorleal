@@ -1,18 +1,17 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import CtaFinal from "@/components/CtaFinal";
 import BeforeAfterHover from "@/components/BeforeAfterHover";
 import CasosGaleria from "@/components/CasosGaleria";
 import { CASOS_CLINICOS } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Casos Clínicos de Reabilitação Oral | Dr. Vitor Leal",
   description:
     "Casos reais de reabilitação oral e estética dental, com autorização de uso em marketing, documentados dentro do Protocolo Leal de Reabilitação Planejada.",
-  alternates: {
-    canonical: "/casos-clinicos",
-  },
-};
+  path: "/casos-clinicos",
+});
 
 export default function CasosClinicosPage() {
   const destaque = CASOS_CLINICOS.filter((c) => c.destaque);
