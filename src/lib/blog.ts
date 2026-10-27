@@ -1,5 +1,15 @@
 import type { Tratamento } from "./content";
 
+export type Referencia = {
+  autores: string;
+  titulo: string;
+  revista: string;
+  ano: string;
+  volume: string;
+  doi: string;
+  pmid: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -12,6 +22,7 @@ export type BlogPost = {
   resumoRapido: string[];
   corpo: { titulo?: string; paragrafos: string[]; lista?: string[] }[];
   tabela?: { titulo: string; colunas: string[]; linhas: string[][] };
+  referencias?: Referencia[];
   tratamentoRelacionado?: Tratamento["slug"];
 };
 
@@ -24,6 +35,10 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "quanto-tempo-dura-lente-de-contato-dental",
+    referencias: [
+      { autores: "Klein P, Spitznagel FA, Zembic A, et al.", titulo: "Survival and Complication Rates of Feldspathic, Leucite-Reinforced, Lithium Disilicate and Zirconia Ceramic Laminate Veneers: A Systematic Review and Meta-Analysis.", revista: "J Esthet Restor Dent", ano: "2024", volume: "37(3):601-619", doi: "10.1111/jerd.13351", pmid: "39523553" },
+      { autores: "Ferrairo BM, de Azevedo-Silva LJ, Minim PR, et al.", titulo: "Biomechanical consideration in tooth-supported glass-ceramic restorations: A systematic review and meta-analysis of survival rates and irreparable failures.", revista: "J Prosthet Dent", ano: "2024", volume: "132(5):879.e1-879.e13", doi: "10.1016/j.prosdent.2024.05.007", pmid: "38849264" },
+    ],
     title: "Quanto tempo dura uma lente de contato dental (laminado cerâmico)?",
     metaTitle: "Quanto tempo dura a lente de contato dental?",
     metaDescription:
@@ -79,6 +94,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "faceta-em-resina-ou-laminado-ceramico-qual-a-diferenca",
+    referencias: [
+      { autores: "Lim TW, Tan SK, Li KY, Burrow MF.", titulo: "Survival and complication rates of resin composite laminate veneers: a systematic review and meta-analysis.", revista: "J Evid Based Dent Pract", ano: "2023", volume: "23(4):101911", doi: "10.1016/j.jebdp.2023.101911", pmid: "38035903" },
+      { autores: "Klein P, Spitznagel FA, Zembic A, et al.", titulo: "Survival and Complication Rates of Feldspathic, Leucite-Reinforced, Lithium Disilicate and Zirconia Ceramic Laminate Veneers: A Systematic Review and Meta-Analysis.", revista: "J Esthet Restor Dent", ano: "2024", volume: "37(3):601-619", doi: "10.1111/jerd.13351", pmid: "39523553" },
+    ],
     title: "Faceta (laminado) em resina ou cerâmico: qual a diferença?",
     metaDescription:
       "Faceta em resina composta (também chamada de laminado em resina) e laminado cerâmico resolvem problemas parecidos de formas diferentes. Entenda quando cada um é indicado.",
@@ -210,6 +229,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "protese-dentaria-incomoda-no-dia-a-dia",
+    referencias: [
+      { autores: "Pinheiro MA, Meira IA, Magno MB, Maia LC, Rodrigues Garcia RC.", titulo: "Masticatory function improvement with the use of mandibular single-implant overdentures in edentulous subjects: a systematic literature review.", revista: "Minerva Stomatol", ano: "2020", volume: "69(4):256-268", doi: "10.23736/S0026-4970.20.04327-7", pmid: "32945635" },
+    ],
     title: "Prótese dentária incomoda no dia a dia? O que esperar da adaptação",
     metaTitle: "Prótese dentária incomoda? O que esperar da adaptação",
     metaDescription:
@@ -270,6 +292,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "quanto-tempo-demora-uma-reabilitacao-oral-completa",
+    referencias: [
+      { autores: "Jiang X, Zhou W, Wu Y, Wang F.", titulo: "Clinical Outcomes of Immediate Implant Loading with Fixed Prostheses in Edentulous Maxillae: A Systematic Review.", revista: "Int J Oral Maxillofac Implants", ano: "2021", volume: "36(3):503-519", doi: "10.11607/jomi.8509", pmid: "34115065" },
+      { autores: "Lan R, Gul M, Jiang X, Wu Y, Wang F.", titulo: "Long-Term Comprehensive Results of Four-Implant-Supported Overdentures and Fixed Complete Dentures: A Systematic Review and Meta-analysis.", revista: "Int J Oral Maxillofac Implants", ano: "2025", volume: "40(6):751-765", doi: "10.11607/jomi.11175", pmid: "40279380" },
+    ],
     title: "Quanto tempo demora uma reabilitação oral completa?",
     metaDescription:
       "Reabilitação oral completa é um processo em etapas, não um procedimento único. Entenda o que influencia o prazo total do tratamento.",
@@ -323,6 +349,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "clareamento-dental-quem-pode-fazer",
+    referencias: [
+      { autores: "Cordeiro DCF, Ñaupari-Villasante R, Condolo LC, et al.", titulo: "What is the optimal concentration of carbamide peroxide for at-home bleaching? A systematic review and network meta-analysis.", revista: "Jpn Dent Sci Rev", ano: "2025", volume: "61:250-263", doi: "10.1016/j.jdsr.2025.10.001", pmid: "41244666" },
+    ],
     title: "Clareamento dental convencional: o que é e quem pode fazer?",
     metaDescription:
       "O que é clareamento dental convencional? Veja quando costuma funcionar bem e quando pode não bastar. Dr. Vitor Leal, CRO-SC 20602, em Itajaí/SC.",
@@ -382,6 +411,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "implante-dentario-imediato-quando-e-indicado",
+    referencias: [
+      { autores: "Campi M, Leitão-Almeida B, Pereira M, et al.", titulo: "Immediate implant placement in damaged extraction sockets: a systematic review and meta-analysis of randomized controlled trials.", revista: "Quintessence Int", ano: "2025", volume: "56(1):34-45", doi: "10.3290/j.qi.b5768294", pmid: "39351790" },
+    ],
     title: "Implante imediato: quando pode ser feito junto da extração?",
     metaDescription:
       "Implante imediato é aquele instalado no mesmo procedimento da extração do dente. Entenda de que depende e por que nem todo caso é indicado.",
