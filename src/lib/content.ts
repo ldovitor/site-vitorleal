@@ -113,7 +113,7 @@ export const TRATAMENTOS: Tratamento[] = [
       "Lentes de contato dental sob medida, com o mínimo desgaste necessário à estrutura natural.",
     title: "Laminados Cerâmicos em Itajaí e Balneário Camboriú",
     metaDescription:
-      "Laminados cerâmicos em Itajaí e Balneário Camboriú: planejamento individual da forma, da cor e das proporções dos dentes, definido em avaliação.",
+      "Laminados cerâmicos em Itajaí e Balneário Camboriú: planejamento individual da forma, da cor e das proporções dos dentes, definido em avaliação individual.",
     problema:
       "Dentes desalinhados, com cor irregular ou pequenas imperfeições podem incomodar mesmo quando a saúde bucal está em dia. Muita gente adia esse tratamento por medo do resultado parecer artificial.",
     diagnostico:
@@ -135,7 +135,7 @@ export const TRATAMENTOS: Tratamento[] = [
       "Planejamento cirúrgico detalhado para devolver função de mastigação e um sorriso completo.",
     title: "Implantes Dentários em Itajaí e Balneário Camboriú",
     metaDescription:
-      "Implantes dentários em Itajaí e Balneário Camboriú: planejamento cirúrgico detalhado para devolver a função de mastigação, definido em avaliação individual.",
+      "Implantes dentários em Itajaí e Balneário Camboriú: planejamento cirúrgico detalhado das etapas do tratamento, definido em avaliação individual.",
     problema:
       "A perda de um ou mais dentes afeta a mastigação, a fala e, com o tempo, a estrutura óssea da região — além do impacto estético.",
     diagnostico:
@@ -177,7 +177,7 @@ export const TRATAMENTOS: Tratamento[] = [
       "Para casos que envolvem função e estrutura, com planejamento mais complexo e etapas claras.",
     title: "Reabilitação Oral em Itajaí e Balneário Camboriú",
     metaDescription:
-      "Reabilitação oral em Itajaí e Balneário Camboriú: planejamento completo para recuperar função e estética, com as etapas explicadas em avaliação individual.",
+      "Reabilitação oral em Itajaí e Balneário Camboriú: planejamento completo da recuperação da função e da estética, com as etapas explicadas em avaliação individual.",
     problema:
       "Casos mais complexos — perda de múltiplos dentes, desgaste extenso, alterações de mordida — não se resolvem com um procedimento isolado. Exigem um plano que olhe para a boca inteira.",
     diagnostico:
