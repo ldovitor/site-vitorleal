@@ -8,6 +8,16 @@ import { TRATAMENTOS, WHATSAPP_LINK } from "@/lib/content";
 
 const BASE_URL = "https://www.odontologiavitorleal.com.br";
 
+const MESES = [
+  "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+  "julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
+];
+
+function dataPorExtenso(iso: string) {
+  const [ano, mes, dia] = iso.split("-").map(Number);
+  return `${dia} de ${MESES[mes - 1]} de ${ano}`;
+}
+
 function estimateReadingMinutes(post: (typeof BLOG_POSTS)[number]) {
   const texto = [
     post.respostaDireta,
@@ -47,14 +57,16 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
   if (!post) notFound();
 
   const tratamento = TRATAMENTOS.find((t) => t.slug === post.tratamentoRelacionado);
-  // Mesmo tratamento primeiro, depois os mais recentes: assim todo artigo recebe links internos.
-  const relacionados = BLOG_POSTS.filter((p) => p.slug !== post.slug)
-    .sort((a, b) => {
-      const mesmoA = a.tratamentoRelacionado === post.tratamentoRelacionado ? 1 : 0;
-      const mesmoB = b.tratamentoRelacionado === post.tratamentoRelacionado ? 1 : 0;
-      return mesmoB - mesmoA || b.dataISO.localeCompare(a.dataISO);
-    })
-    .slice(0, 3);
+  // Artigos indicados à mão primeiro; depois o mesmo tratamento e os mais recentes: todo artigo recebe links internos.
+  const indicados = (post.relacionados ?? [])
+    .map((s) => BLOG_POSTS.find((p) => p.slug === s))
+    .filter((p): p is (typeof BLOG_POSTS)[number] => Boolean(p));
+  const demais = BLOG_POSTS.filter((p) => p.slug !== post.slug && !indicados.includes(p)).sort((a, b) => {
+    const mesmoA = a.tratamentoRelacionado === post.tratamentoRelacionado ? 1 : 0;
+    const mesmoB = b.tratamentoRelacionado === post.tratamentoRelacionado ? 1 : 0;
+    return mesmoB - mesmoA || b.dataISO.localeCompare(a.dataISO);
+  });
+  const relacionados = [...indicados, ...demais].slice(0, 3);
   const minutosLeitura = estimateReadingMinutes(post);
 
   const articleJsonLd = {
@@ -63,7 +75,7 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.dataISO,
-    dateModified: post.dataISO,
+    dateModified: post.atualizadoISO ?? post.dataISO,
     author: {
       "@type": "Person",
       name: "Dr. Vitor Leal",
@@ -98,6 +110,12 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
             )}
             <span aria-hidden="true">·</span>
             <span>{post.dataExibicao}</span>
+            {post.atualizadoISO && post.atualizadoISO !== post.dataISO && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span>Atualizado em {dataPorExtenso(post.atualizadoISO)}</span>
+              </>
+            )}
             <span aria-hidden="true">·</span>
             <span>{minutosLeitura} min de leitura</span>
           </div>
@@ -241,11 +259,12 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
       {relacionados.length > 0 && (
         <section className="section pt-0">
           <div className="container-site max-w-2xl">
-            <h2 className="text-xl mb-6">Outros artigos</h2>
+            <h2 className="text-xl mb-6">Leia também</h2>
             <div className="space-y-4">
               {relacionados.map((p) => (
                 <Link key={p.slug} href={`/blog/${p.slug}`} className="block group">
                   <p className="text-verde group-hover:text-bronze transition-colors">{p.title}</p>
+                  {p.chamada && <p className="text-sm text-cinza">{p.chamada}</p>}
                 </Link>
               ))}
             </div>
