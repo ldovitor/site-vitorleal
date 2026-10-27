@@ -23,6 +23,18 @@ function origemDoClique(link: Element): string {
 // individualmente, já que todos linkam pra wa.me.
 export default function WhatsAppClickTracker() {
   useEffect(() => {
+    // Anúncios: o endereço de destino traz um código de campanha (ex.: ?ref=GP1).
+    // Guardamos na sessão e levamos para a mensagem do WhatsApp, para a recepção
+    // ligar o paciente ao anúncio no OrtoClean mesmo que ele navegue por outras páginas.
+    try {
+      const codigo = new URLSearchParams(window.location.search).get("ref");
+      if (codigo && /^[A-Za-z]{2}\d{1,3}$/.test(codigo)) {
+        sessionStorage.setItem("ref_anuncio", codigo.toUpperCase());
+      }
+    } catch {
+      // sem sessionStorage: segue sem o código
+    }
+
     const handler = (e: MouseEvent) => {
       const target = (e.target as HTMLElement)?.closest?.('a[href*="wa.me"]') as HTMLAnchorElement | null;
       if (target) {
@@ -33,7 +45,14 @@ export default function WhatsAppClickTracker() {
           const texto = url.searchParams.get("text") ?? "";
           if (texto && !texto.includes("Ref: site")) {
             const pagina = window.location.pathname.replace(/\/$/, "");
-            url.searchParams.set("text", `${texto} (Ref: site${pagina})`);
+            let anuncio = "";
+            try {
+              const codigo = sessionStorage.getItem("ref_anuncio");
+              if (codigo && /^[A-Z]{2}\d{1,3}$/.test(codigo)) anuncio = ` (ref. ${codigo})`;
+            } catch {
+              // sem sessionStorage
+            }
+            url.searchParams.set("text", `${texto} (Ref: site${pagina})${anuncio}`);
             target.href = url.toString();
           }
         } catch {
