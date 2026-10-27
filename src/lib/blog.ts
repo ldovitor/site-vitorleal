@@ -196,7 +196,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         titulo: "2. Planejamento e cirurgia",
         paragrafos: [
-          "O posicionamento do implante é planejado para devolver função de mastigação real — não só preencher o espaço do dente perdido — pensando também no resultado estético da prótese final. A cirurgia em si costuma ser feita em consultório, com anestesia local.",
+          "O posicionamento do implante é planejado pensando na função de mastigação — e não só em preencher o espaço do dente perdido — e também no resultado estético da prótese final. A cirurgia em si costuma ser feita em consultório, com anestesia local.",
         ],
       },
       {
@@ -209,12 +209,19 @@ export const BLOG_POSTS: BlogPost[] = [
         titulo: "4. Prótese final",
         paragrafos: [
           "Só depois da cicatrização confirmada é que a prótese final — unitária, sobre implante, ou uma reabilitação mais ampla, conforme o caso — é planejada e instalada.",
+          "Estudos científicos descrevem resultados de grupos de pacientes e não permitem prever o que acontecerá em um caso individual; o plano e o acompanhamento são definidos na avaliação clínica.",
         ],
       },
       {
         titulo: "Quando um enxerto ósseo entra no plano",
         paragrafos: [
-          "Quando um dente foi perdido há muito tempo, é comum que o osso da região tenha reabsorvido parte do seu volume. Nesses casos, um enxerto ósseo — prévio ou junto com o implante — pode ser necessário para garantir uma base segura. Isso é identificado já no diagnóstico, e entra no plano de tratamento desde o início, não como uma surpresa no meio do caminho.",
+          "Quando um dente foi perdido há muito tempo, é comum que o osso da região tenha reabsorvido parte do seu volume. Nesses casos, um enxerto ósseo — prévio ou junto com o implante — pode ser necessário para oferecer uma base adequada ao implante. Isso é identificado já no diagnóstico, e entra no plano de tratamento desde o início, não como uma surpresa no meio do caminho.",
+        ],
+      },
+      {
+        titulo: "Titânio ou zircônia?",
+        paragrafos: [
+          "Os implantes podem ser de titânio ou de zircônia. Uma revisão de revisões indexada no PubMed (Shetty, 2026) compara os dois materiais: descreve o titânio como padrão de previsibilidade de longo prazo e a zircônia como alternativa em casos de maior exigência estética. A escolha do material, quando há opção, é definida na avaliação, junto com o diagnóstico.",
         ],
       },
       {
