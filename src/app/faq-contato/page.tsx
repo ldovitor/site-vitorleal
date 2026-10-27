@@ -4,7 +4,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import { WHATSAPP_LINK, FAQ_ITEMS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Perguntas Frequentes e Contato | Dentista em Itajaí — Dr. Vitor Leal",
+  title: "Perguntas Frequentes e Contato | Dentista em Itajaí",
   description:
     "Perguntas frequentes, WhatsApp e localização do consultório do Dr. Vitor Leal em Itajaí/SC, atendendo também Balneário Camboriú, Camboriú, Navegantes e Itapema.",
   alternates: {

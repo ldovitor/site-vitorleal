@@ -16,7 +16,7 @@ export async function generateMetadata(props: PageProps<"/tratamentos/[slug]">) 
   if (!tratamento) return {};
   return {
     title: tratamento.title,
-    description: tratamento.resumoCard,
+    description: tratamento.metaDescription ?? tratamento.resumoCard,
     alternates: {
       canonical: `/tratamentos/${tratamento.slug}`,
     },

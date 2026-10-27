@@ -18,6 +18,12 @@ function estimateReadingMinutes(post: (typeof BLOG_POSTS)[number]) {
   return Math.max(1, Math.round(palavras / 180));
 }
 
+// Título da aba e do Google: acrescenta a marca só se o total couber em cerca de 60 caracteres.
+function tituloMeta(titulo: string) {
+  const comMarca = `${titulo} | Dr. Vitor Leal`;
+  return comMarca.length <= 60 ? comMarca : titulo;
+}
+
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
 }
@@ -27,7 +33,7 @@ export async function generateMetadata(props: PageProps<"/blog/[slug]">) {
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Dr. Vitor Leal`,
+    title: tituloMeta(post.metaTitle ?? post.title),
     description: post.metaDescription,
     alternates: {
       canonical: `/blog/${post.slug}`,

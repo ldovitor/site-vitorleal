@@ -93,6 +93,7 @@ export type Tratamento = {
   nome: string;
   categoria: "Estética Dental" | "Reabilitação Oral" | "Implantes";
   resumoCard: string;
+  metaDescription?: string;
   title: string;
   problema: string;
   diagnostico: string;
@@ -110,7 +111,9 @@ export const TRATAMENTOS: Tratamento[] = [
     categoria: "Estética Dental",
     resumoCard:
       "Lentes de contato dental sob medida, com o mínimo desgaste necessário à estrutura natural.",
-    title: "Laminados Cerâmicos em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
+    title: "Laminados Cerâmicos em Itajaí e Balneário Camboriú",
+    metaDescription:
+      "Laminados cerâmicos em Itajaí e Balneário Camboriú: planejamento individual da forma, da cor e das proporções dos dentes, definido em avaliação.",
     problema:
       "Dentes desalinhados, com cor irregular ou pequenas imperfeições podem incomodar mesmo quando a saúde bucal está em dia. Muita gente adia esse tratamento por medo do resultado parecer artificial.",
     diagnostico:
@@ -130,7 +133,9 @@ export const TRATAMENTOS: Tratamento[] = [
     categoria: "Implantes",
     resumoCard:
       "Planejamento cirúrgico detalhado para devolver função de mastigação e um sorriso completo.",
-    title: "Implantes Dentários em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
+    title: "Implantes Dentários em Itajaí e Balneário Camboriú",
+    metaDescription:
+      "Implantes dentários em Itajaí e Balneário Camboriú: planejamento cirúrgico detalhado para devolver a função de mastigação, definido em avaliação individual.",
     problema:
       "A perda de um ou mais dentes afeta a mastigação, a fala e, com o tempo, a estrutura óssea da região — além do impacto estético.",
     diagnostico:
@@ -150,7 +155,7 @@ export const TRATAMENTOS: Tratamento[] = [
     categoria: "Implantes",
     resumoCard:
       "Prótese fixa apoiada em implantes para quem perdeu todos ou quase todos os dentes, com indicação definida em avaliação individual.",
-    title: "Prótese Protocolo sobre Implante em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
+    title: "Prótese Protocolo sobre Implante em Itajaí e Balneário Camboriú",
     problema:
       "A perda de todos ou quase todos os dentes, ou o uso de uma dentadura que se movimenta, pode afetar a mastigação e a fala. Existe a opção de prótese fixa sobre implantes, e a indicação depende de cada caso.",
     diagnostico:
@@ -170,7 +175,9 @@ export const TRATAMENTOS: Tratamento[] = [
     categoria: "Reabilitação Oral",
     resumoCard:
       "Para casos que envolvem função e estrutura, com planejamento mais complexo e etapas claras.",
-    title: "Reabilitação Oral em Itajaí e Balneário Camboriú | Dr. Vitor Leal",
+    title: "Reabilitação Oral em Itajaí e Balneário Camboriú",
+    metaDescription:
+      "Reabilitação oral em Itajaí e Balneário Camboriú: planejamento completo para recuperar função e estética, com as etapas explicadas em avaliação individual.",
     problema:
       "Casos mais complexos — perda de múltiplos dentes, desgaste extenso, alterações de mordida — não se resolvem com um procedimento isolado. Exigem um plano que olhe para a boca inteira.",
     diagnostico:
@@ -190,7 +197,7 @@ export const TRATAMENTOS: Tratamento[] = [
     categoria: "Estética Dental",
     resumoCard:
       "Faceta ou laminado em resina: alternativa mais conservadora aos laminados cerâmicos, reversível e com menor desgaste.",
-    title: "Facetas (Laminados) em Resina Composta em Itajaí | Dr. Vitor Leal",
+    title: "Facetas (Laminados) em Resina Composta em Itajaí",
     problema:
       "Pequenas imperfeições, desgastes ou desalinhamentos leves — casos em que uma correção mais conservadora já resolve.",
     diagnostico:

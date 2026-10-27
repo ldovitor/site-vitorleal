@@ -3,6 +3,7 @@ import type { Tratamento } from "./content";
 export type BlogPost = {
   slug: string;
   title: string;
+  metaTitle?: string;
   metaDescription: string;
   dataISO: string;
   dataExibicao: string;
@@ -24,6 +25,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "quanto-tempo-dura-lente-de-contato-dental",
     title: "Quanto tempo dura uma lente de contato dental (laminado cerâmico)?",
+    metaTitle: "Quanto tempo dura a lente de contato dental?",
     metaDescription:
       "Entenda a durabilidade real de uma lente de contato dental (laminado cerâmico), o que influencia esse prazo e como cuidar do resultado.",
     dataISO: "2026-09-01",
@@ -131,6 +133,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "como-funciona-o-implante-dentario-passo-a-passo",
     title: "Como funciona o implante dentário, do diagnóstico à cicatrização",
+    metaTitle: "Como funciona o implante dentário, passo a passo",
     metaDescription:
       "Um passo a passo geral de como funciona o processo de implante dentário: diagnóstico, cirurgia, cicatrização e prótese final.",
     dataISO: "2026-09-15",
@@ -208,6 +211,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "protese-dentaria-incomoda-no-dia-a-dia",
     title: "Prótese dentária incomoda no dia a dia? O que esperar da adaptação",
+    metaTitle: "Prótese dentária incomoda? O que esperar da adaptação",
     metaDescription:
       "Uma prótese dentária bem planejada não deveria atrapalhar sua rotina. Entenda o que é normal no período de adaptação e o que não é.",
     dataISO: "2026-09-22",
