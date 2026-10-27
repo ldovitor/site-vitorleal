@@ -42,11 +42,36 @@ export async function generateMetadata(props: PageProps<"/blog/[slug]">) {
   const { slug } = await props.params;
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) return {};
+  const titulo = tituloMeta(post.metaTitle ?? post.title);
   return {
-    title: tituloMeta(post.metaTitle ?? post.title),
+    title: titulo,
     description: post.metaDescription,
     alternates: {
       canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      type: "article",
+      locale: "pt_BR",
+      url: `${BASE_URL}/blog/${post.slug}`,
+      siteName: "Dr. Vitor Leal — Clínica Ortoface",
+      title: titulo,
+      description: post.metaDescription,
+      publishedTime: post.dataISO,
+      modifiedTime: post.atualizadoISO ?? post.dataISO,
+      images: [
+        {
+          url: "/images/site/fachada-dia.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Fachada da Clínica Ortoface, em Itajaí/SC",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titulo,
+      description: post.metaDescription,
+      images: ["/images/site/fachada-dia.jpg"],
     },
   };
 }
