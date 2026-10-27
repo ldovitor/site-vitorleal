@@ -1,14 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Teste (24/10/2026): otimizador de imagem do Next 16.4.3 ligado de novo.
   images: {
-    // O otimizador de imagem on-demand desta versão do Next (16.3.5) está
-    // devolvendo o arquivo errado para algumas URLs em teste local (bug
-    // reproduzido e isolado nesta sessão — não é falha nos arquivos em si).
-    // Desativado por segurança até investigar/atualizar; as fotos já são
-    // exportadas em tamanho razoável, então o impacto de performance é
-    // pequeno por enquanto.
-    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
   // Fotos do site ficam em cache no navegador por 30 dias (o Google PageSpeed
   // apontava cache curto). Se uma foto for trocada mantendo o mesmo nome, ela
