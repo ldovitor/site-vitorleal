@@ -151,6 +151,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-funciona-o-implante-dentario-passo-a-passo",
+    referencias: [
+      { autores: "Shetty U, Sharma A, Mhatre S, Srichand R, Joshi M, Trivedi M.", titulo: "Comparative Evaluation of Titanium Versus Zirconia Implants for Their Clinical Outcomes: An Overview of Reviews.", revista: "Cureus", ano: "2026", volume: "18(5):e108219", doi: "10.7759/cureus.108219", pmid: "42245850" },
+    ],
     title: "Como funciona o implante dentário, do diagnóstico à cicatrização",
     metaTitle: "Como funciona o implante dentário, passo a passo",
     metaDescription:
@@ -231,6 +234,8 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "protese-dentaria-incomoda-no-dia-a-dia",
     referencias: [
       { autores: "Pinheiro MA, Meira IA, Magno MB, Maia LC, Rodrigues Garcia RC.", titulo: "Masticatory function improvement with the use of mandibular single-implant overdentures in edentulous subjects: a systematic literature review.", revista: "Minerva Stomatol", ano: "2020", volume: "69(4):256-268", doi: "10.23736/S0026-4970.20.04327-7", pmid: "32945635" },
+      { autores: "Sharka R, Abed H, Hector M.", titulo: "Oral health-related quality of life and satisfaction of edentulous patients using conventional complete dentures and implant-retained overdentures: An umbrella systematic review.", revista: "Gerodontology", ano: "2019", volume: "36(3):195-204", doi: "10.1111/ger.12399", pmid: "30875108" },
+      { autores: "Egido Moreno S, Ayuso Montero R, Schemel Suárez M, Roca-Umbert JV, Izquierdo Gómez K, López López J.", titulo: "Evaluation of the quality of life and satisfaction in patients using complete dentures versus mandibular overdentures. Systematic review and meta-analysis.", revista: "Clin Exp Dent Res", ano: "2020", volume: "7(2):231-241", doi: "10.1002/cre2.347", pmid: "33205918" },
     ],
     title: "Prótese dentária incomoda no dia a dia? O que esperar da adaptação",
     metaTitle: "Prótese dentária incomoda? O que esperar da adaptação",
@@ -295,6 +300,7 @@ export const BLOG_POSTS: BlogPost[] = [
     referencias: [
       { autores: "Jiang X, Zhou W, Wu Y, Wang F.", titulo: "Clinical Outcomes of Immediate Implant Loading with Fixed Prostheses in Edentulous Maxillae: A Systematic Review.", revista: "Int J Oral Maxillofac Implants", ano: "2021", volume: "36(3):503-519", doi: "10.11607/jomi.8509", pmid: "34115065" },
       { autores: "Lan R, Gul M, Jiang X, Wu Y, Wang F.", titulo: "Long-Term Comprehensive Results of Four-Implant-Supported Overdentures and Fixed Complete Dentures: A Systematic Review and Meta-analysis.", revista: "Int J Oral Maxillofac Implants", ano: "2025", volume: "40(6):751-765", doi: "10.11607/jomi.11175", pmid: "40279380" },
+      { autores: "Tomar S, Agnihotri N, Vhanmane G.", titulo: "Prosthetic complications of implant-supported complete arch prostheses: An umbrella review of systematic reviews.", revista: "J Prosthet Dent", ano: "2026", volume: "136(1):52-59", doi: "10.1016/j.prosdent.2026.03.013", pmid: "41927400" },
     ],
     title: "Quanto tempo demora uma reabilitação oral completa?",
     metaDescription:
