@@ -49,7 +49,7 @@ export const BLOG_POSTS: BlogPost[] = [
     respostaDireta:
       "De forma geral, laminados cerâmicos bem indicados e bem cuidados duram muitos anos — mas o prazo exato varia de paciente para paciente, por isso não existe um número único válido para todo mundo.",
     resumoRapido: [
-      "A durabilidade depende mais do planejamento e do preparo do dente do que do material em si.",
+      "A durabilidade depende do planejamento, do preparo do dente e da escolha do material, avaliados caso a caso.",
       "Hábitos como roer unha, usar os dentes como ferramenta ou bruxismo não tratado reduzem a vida útil.",
       "Sinais de alerta — sensibilidade nova, trinca visível, borda solta — merecem avaliação, não espera.",
       "Manutenção regular com o dentista prolonga o resultado tanto quanto os cuidados em casa.",
@@ -65,6 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragrafos: [
           "Cerâmica é um material resistente, mas a durabilidade de uma lente de contato dental está muito ligada ao planejamento: proporção, espessura e o quanto de estrutura natural foi preservada no preparo. É por isso que, no Protocolo Leal, o resultado é planejado antes de qualquer desgaste — preservar o dente natural ao máximo tende a favorecer a durabilidade a longo prazo.",
           "Hábitos do dia a dia também pesam: roer unha, usar os dentes como ferramenta (abrir embalagem, morder objetos) ou bruxismo não tratado podem reduzir a vida útil de qualquer restauração, cerâmica ou não — nesses casos, uma placa de proteção noturna costuma ser parte do plano.",
+          "Revisões sistemáticas indexadas no PubMed, que reúnem estudos clínicos com acompanhamento de vários anos, descrevem o desempenho de laminados cerâmicos em grupos de pacientes. Elas observam que o tipo de cerâmica pode influenciar a frequência de complicações e que ainda há poucos dados de longo prazo sobre laminados de zircônia. Por isso o material é escolhido caso a caso, na avaliação.",
         ],
       },
       {
@@ -87,6 +88,13 @@ export const BLOG_POSTS: BlogPost[] = [
         titulo: "Como isso é avaliado no seu caso",
         paragrafos: [
           "Na avaliação, o diagnóstico considera sua mordida, seus hábitos e a estrutura dos seus dentes antes de indicar laminados cerâmicos — é parte do que define se esse é o tratamento certo para o seu caso, e não outro.",
+          "Os estudos científicos descrevem resultados de grupos de pacientes, e não preveem o que acontecerá em um caso individual; por isso a avaliação clínica é o que define a indicação.",
+        ],
+      },
+      {
+        titulo: "A cerâmica pode lascar?",
+        paragrafos: [
+          "Pode acontecer, como em qualquer restauração, e o tipo de cerâmica pode influenciar a frequência de complicações. Hábitos como roer unha e ranger os dentes podem sobrecarregar a restauração, e o profissional avalia, caso a caso, se há necessidade de proteção. Se notar qualquer alteração, avise a clínica para avaliação.",
         ],
       },
     ],
