@@ -285,13 +285,13 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         titulo: "O que não é esperado",
         paragrafos: [
-          "Dor persistente, feridas recorrentes ou dificuldade de mastigar semanas depois da instalação não são \"normais de se acostumar\" — geralmente indicam que algum ajuste pontual é necessário, e o acompanhamento serve exatamente para resolver isso.",
+          "Dor persistente, feridas recorrentes ou dificuldade de mastigar semanas depois da instalação não são \"normais de se acostumar\" — geralmente indicam que algum ajuste pontual é necessário, e o acompanhamento serve exatamente para fazer esse ajuste.",
         ],
       },
       {
         titulo: "Tipos de prótese e o que muda no conforto",
         paragrafos: [
-          "Prótese fixa (cimentada ou sobre implante) costuma ter uma sensação mais próxima do dente natural. Prótese removível pede mais adaptação de fala e mastigação no início, mas é a opção correta para vários casos. Nenhuma é \"melhor\" de forma isolada — o que muda é a indicação certa para o que o seu caso precisa.",
+          "Prótese fixa (cimentada ou sobre implante) a sensação varia de pessoa para pessoa e de acordo com o tipo de prótese; isso é avaliado no planejamento. Prótese removível pede mais adaptação de fala e mastigação no início, mas é uma opção indicada em vários casos. A escolha entre elas não é isolada: depende do que o seu caso precisa, definido na avaliação.",
         ],
       },
       {
@@ -305,9 +305,16 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        titulo: "O que dizem os estudos",
+        paragrafos: [
+          "Uma revisão guarda-chuva (Sharka, 2019) e uma meta-análise (Egido Moreno, 2020), indexadas no PubMed, compararam dentaduras convencionais com sobredentaduras apoiadas em implantes em pessoas sem dentes. Em média, os estudos descrevem maior satisfação e conforto com a sobredentadura. A meta-análise não encontrou diferença na estética e observou pior higiene com a sobredentadura. A capacidade de adaptação de cada pessoa e fatores financeiros influenciam a tolerância às duas opções. A qualidade da evidência varia entre os estudos. Por isso, quando a prótese incomoda, o primeiro passo é avaliar o caso, e não trocar de tipo de tratamento por conta própria.",
+        ],
+      },
+      {
         titulo: "O papel do planejamento",
         paragrafos: [
           "Prótese removível, fixa ou sobre implante — a indicação certa para cada caso é o que mais influencia o conforto no dia a dia. É por isso que essa decisão parte de uma avaliação, e não de uma escolha genérica.",
+          "Os estudos científicos descrevem resultados de grupos de pacientes e não permitem prever o que acontecerá em um caso individual; a avaliação clínica é que define o caminho.",
         ],
       },
     ],
