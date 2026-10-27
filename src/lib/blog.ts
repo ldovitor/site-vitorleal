@@ -339,7 +339,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Não existe prazo padrão — o tempo depende da extensão e da combinação de tratamentos envolvidos.",
       "Casos com implante têm o período de cicatrização como parte natural do cronograma.",
       "O plano é dividido em fases, com prioridades claras desde o início.",
-      "Acompanhamento entre as fases é o que garante que o resultado final funcione como esperado.",
+      "O acompanhamento entre as fases permite ajustar o plano ao longo do tratamento.",
     ],
     corpo: [
       {
@@ -370,9 +370,22 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        titulo: "Carga imediata: uma possibilidade, não uma regra",
+        paragrafos: [
+          "Em alguns casos selecionados, é possível instalar uma prótese fixa sobre os implantes sem esperar o período habitual de cicatrização, o que é chamado de carga imediata. Uma revisão sistemática com meta-análise indexada no PubMed (Jiang, 2021), sobre a maxila sem dentes, não encontrou diferença significativa de sobrevivência dos implantes entre a carga imediata e a convencional, mas aponta cautela pela falta de ensaios clínicos randomizados e descreve a carga imediata como alternativa quando seguidos critérios adequados de inclusão e exclusão. Se esse caminho é possível no seu caso é definido na avaliação.",
+        ],
+      },
+      {
+        titulo: "O que os estudos descrevem sobre o acompanhamento",
+        paragrafos: [
+          "Revisões indexadas no PubMed descrevem resultados de próteses sobre implantes com acompanhamento de pelo menos cinco anos. Na maxila, Lan (2025) comparou a sobredentadura sobre 4 implantes com a prótese total fixa: as duas tiveram resultados previsíveis a médio prazo; a prótese fixa teve maior sobrevivência de implantes e de prótese, e a sobredentadura teve menos perda óssea aos 5 anos e mais complicações. Tomar (2026), em revisão de próteses totais fixas sobre implantes, descreve que o material e o desenho da prótese influenciam o padrão de complicações, e que usar 4 ou 6 implantes não alterou a sobrevivência. Por isso, a Clínica Ortoface inclui o acompanhamento depois da fase principal no plano.",
+        ],
+      },
+      {
         titulo: "Como isso é comunicado no seu caso",
         paragrafos: [
-          "O diferencial não é prometer um prazo genérico — é construir um plano em etapas, com prioridades claras, para que você entenda a sequência do tratamento antes de começar, não durante.",
+          "Em vez de prometer um prazo genérico, o plano é construído em etapas, com prioridades claras, para que você entenda a sequência do tratamento antes de começar, não durante.",
+          "Os estudos científicos descrevem resultados de grupos de pacientes e não permitem prever o que acontecerá em um caso individual; o plano é definido na avaliação clínica.",
         ],
       },
     ],
