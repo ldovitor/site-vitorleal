@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_LINKS, WHATSAPP_LINK, SOCIAL_LINKS } from "@/lib/content";
+import { EVENTO_ABRIR_COOKIES } from "@/components/CookieBanner";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -93,13 +94,22 @@ export default function Footer() {
       <div className="border-t border-areia/10">
         <div className="container-site py-6 text-xs text-areia/60 flex flex-wrap gap-x-4 gap-y-2 justify-between">
           <span>© {new Date().getFullYear()} Dr. Vitor Leal — CRO-SC 20602. Todos os direitos reservados.</span>
-          <Link
-            href="/politica-de-privacidade"
-            onClick={scrollToTopIfSameRoute("/politica-de-privacidade")}
-            className="hover:text-areia"
-          >
-            Política de Privacidade
-          </Link>
+          <span className="flex gap-x-4">
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event(EVENTO_ABRIR_COOKIES))}
+              className="hover:text-areia"
+            >
+              Preferências de cookies
+            </button>
+            <Link
+              href="/politica-de-privacidade"
+              onClick={scrollToTopIfSameRoute("/politica-de-privacidade")}
+              className="hover:text-areia"
+            >
+              Política de Privacidade
+            </Link>
+          </span>
         </div>
       </div>
     </footer>
