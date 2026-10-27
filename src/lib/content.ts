@@ -177,7 +177,7 @@ export const TRATAMENTOS: Tratamento[] = [
       "Para casos que envolvem função e estrutura, com planejamento mais complexo e etapas claras.",
     title: "Reabilitação Oral em Itajaí e Balneário Camboriú",
     metaDescription:
-      "Reabilitação oral em Itajaí e Balneário Camboriú: planejamento completo da recuperação da função e da estética, com as etapas explicadas em avaliação individual.",
+      "Reabilitação oral em Itajaí e Balneário Camboriú: planejamento completo da recuperação da função e da estética, com etapas explicadas na avaliação individual.",
     problema:
       "Casos mais complexos — perda de múltiplos dentes, desgaste extenso, alterações de mordida — não se resolvem com um procedimento isolado. Exigem um plano que olhe para a boca inteira.",
     diagnostico:
