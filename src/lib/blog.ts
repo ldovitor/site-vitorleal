@@ -17,6 +17,9 @@ export type BlogPost = {
   metaDescription: string;
   dataISO: string;
   dataExibicao: string;
+  atualizadoISO?: string;
+  chamada?: string;
+  relacionados?: string[];
   resumo: string;
   respostaDireta: string;
   resumoRapido: string[];
@@ -45,6 +48,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "Entenda a durabilidade real de uma lente de contato dental (laminado cerâmico), o que influencia esse prazo e como cuidar do resultado.",
     dataISO: "2026-09-01",
     dataExibicao: "1 de setembro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Veja o que influencia a durabilidade do laminado cerâmico",
+    relacionados: ["faceta-em-resina-ou-laminado-ceramico-qual-a-diferenca", "quanto-tempo-demora-uma-reabilitacao-oral-completa"],
     resumo: "A durabilidade de uma lente de contato dental depende menos do material e mais do planejamento por trás dela.",
     respostaDireta:
       "De forma geral, laminados cerâmicos bem indicados e bem cuidados duram muitos anos — mas o prazo exato varia de paciente para paciente, por isso não existe um número único válido para todo mundo.",
@@ -108,9 +114,12 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     title: "Faceta (laminado) em resina ou cerâmico: qual a diferença?",
     metaDescription:
-      "Faceta em resina composta (também chamada de laminado em resina) e laminado cerâmico atendem a necessidades parecidas de formas diferentes. Entenda quando cada um é indicado.",
+      "Faceta em resina e laminado cerâmico: entenda as diferenças e quando cada um costuma ser indicado, após avaliação. Dr. Vitor Leal, CRO-SC 20602.",
     dataISO: "2026-09-08",
     dataExibicao: "8 de setembro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Entenda as diferenças entre resina e cerâmica",
+    relacionados: ["quanto-tempo-dura-lente-de-contato-dental", "clareamento-dental-quem-pode-fazer"],
     resumo: "A indicação de cada material depende do que o seu caso precisa, e não de uma escolha isolada.",
     respostaDireta:
       "A faceta em resina composta é feita diretamente no consultório, é mais conservadora e reversível; o laminado cerâmico é confeccionado sob medida em laboratório, exige um preparo mais específico e costuma ser indicado para casos que pedem mais estabilidade de cor e forma a longo prazo.",
@@ -171,6 +180,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "Um passo a passo geral de como funciona o processo de implante dentário: diagnóstico, cirurgia, cicatrização e prótese final.",
     dataISO: "2026-09-15",
     dataExibicao: "15 de setembro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Conheça as etapas gerais do processo de implante",
+    relacionados: ["implante-dentario-imediato-quando-e-indicado", "quanto-tempo-demora-uma-reabilitacao-oral-completa"],
     resumo: "Entender as etapas do processo ajuda a chegar com menos ansiedade na avaliação.",
     respostaDireta:
       "De forma geral, o processo passa por diagnóstico com imagem (radiografia ou tomografia), cirurgia de instalação do implante, um período de cicatrização/integração ao osso, e só depois a instalação da prótese final — o tempo total varia de caso para caso.",
@@ -261,6 +273,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "Uma prótese dentária bem planejada não deveria atrapalhar sua rotina. Entenda o que é normal no período de adaptação e o que não é.",
     dataISO: "2026-09-22",
     dataExibicao: "22 de setembro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Veja o que é esperado na adaptação da prótese",
+    relacionados: ["quanto-tempo-demora-uma-reabilitacao-oral-completa", "como-funciona-o-implante-dentario-passo-a-passo"],
     resumo: "Algum estranhamento nos primeiros dias é esperado — incômodo constante depois disso, não.",
     respostaDireta:
       "É normal sentir algum estranhamento nos primeiros dias com uma prótese nova, especialmente ao falar e mastigar; o que não é esperado é um incômodo constante depois do período inicial de adaptação — isso costuma indicar que algum ajuste é necessário.",
@@ -332,6 +347,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "Reabilitação oral completa é um processo em etapas, não um procedimento único. Entenda o que influencia o prazo total do tratamento.",
     dataISO: "2026-09-23",
     dataExibicao: "23 de setembro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Entenda por que o plano é feito em etapas",
+    relacionados: ["como-funciona-o-implante-dentario-passo-a-passo", "protese-dentaria-incomoda-no-dia-a-dia", "implante-dentario-imediato-quando-e-indicado"],
     resumo: "Não existe um prazo padrão — existe um plano em etapas, construído para o seu caso.",
     respostaDireta:
       "Reabilitação oral completa não tem um prazo fixo: o tempo total depende de quantos dentes e estruturas estão envolvidos, e de quais tratamentos combinados (implantes, próteses, restaurações) o caso exige — por isso o plano é construído em etapas, com prazos definidos na avaliação.",
@@ -398,9 +416,12 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     title: "Clareamento dental convencional: o que é e quem pode fazer?",
     metaDescription:
-      "O que é clareamento dental convencional? Veja quando costuma funcionar bem e quando pode não bastar. Dr. Vitor Leal, CRO-SC 20602, em Itajaí/SC.",
+      "O que é o clareamento dental e como é avaliado? Entenda quando ele pode ser considerado e quando outras opções entram na conversa. Dr. Vitor Leal, CRO-SC 20602.",
     dataISO: "2026-09-23",
     dataExibicao: "23 de setembro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Saiba quando o clareamento costuma ser considerado",
+    relacionados: ["quanto-tempo-dura-lente-de-contato-dental", "faceta-em-resina-ou-laminado-ceramico-qual-a-diferenca"],
     resumo: "O clareamento pode ser uma opção para alguns tipos de escurecimento, mas não é indicado para todos os casos.",
     respostaDireta:
       "Em geral, o clareamento dental convencional é considerado quando o escurecimento é causado por manchas superficiais, como alimentos, bebidas ou fumo, mas a indicação depende da avaliação do dentista; manchas de origem interna ao dente — por trauma ou por certos medicamentos, por exemplo — podem responder menos, e às vezes pedem outra abordagem.",
@@ -470,6 +491,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "Implante imediato é aquele instalado no mesmo procedimento da extração do dente. Entenda de que depende e por que nem todo caso é indicado.",
     dataISO: "2026-10-20",
     dataExibicao: "20 de outubro de 2026",
+    atualizadoISO: "2026-10-27",
+    chamada: "Entenda de que depende instalar o implante junto com a extração",
+    relacionados: ["como-funciona-o-implante-dentario-passo-a-passo", "quanto-tempo-demora-uma-reabilitacao-oral-completa"],
     resumo: "Em alguns casos é possível; em outros, esperar a cicatrização faz parte do planejamento.",
     respostaDireta:
       "Em alguns casos é possível instalar o implante junto com a extração do dente, mas depende das condições do osso, da gengiva e da região — por isso só a avaliação, com exames de imagem, mostra se o seu caso permite ou se é indicado esperar a cicatrização antes.",
