@@ -111,7 +111,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Faceta em resina composta (também chamada de laminado em resina) e laminado cerâmico resolvem problemas parecidos de formas diferentes. Entenda quando cada um é indicado.",
     dataISO: "2026-09-08",
     dataExibicao: "8 de setembro de 2026",
-    resumo: "Nenhum dos dois é \"melhor\" de forma absoluta — a indicação certa depende do que o seu caso precisa.",
+    resumo: "A indicação de cada material depende do que o seu caso precisa, e não de uma escolha isolada.",
     respostaDireta:
       "A faceta em resina composta é feita diretamente no consultório, é mais conservadora e reversível; o laminado cerâmico é confeccionado sob medida em laboratório, exige um preparo mais específico e costuma ser indicado para casos que pedem mais estabilidade de cor e forma a longo prazo.",
     resumoRapido: [
@@ -129,13 +129,15 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         titulo: "Facetas em resina composta",
         paragrafos: [
-          "São feitas diretamente sobre o dente, no próprio consultório, com resina composta esculpida à mão. É uma alternativa mais conservadora e reversível aos laminados cerâmicos, com menor desgaste — geralmente indicada para correções mais pontuais, e o resultado sai no mesmo dia.",
+          "São feitas diretamente sobre o dente, no próprio consultório, com resina composta esculpida à mão. É uma alternativa mais conservadora e reversível aos laminados cerâmicos, com menor desgaste — geralmente indicada para correções mais pontuais.",
+          "Uma revisão sistemática com meta-análise indexada no PubMed (Lim, 2023) descreve o desempenho dos laminados em resina composta em grupos de pacientes. Ela aponta que as complicações mais relatadas são de superfície, cor e pigmentação nas bordas, e que, em geral, são consideradas clinicamente aceitáveis, com ou sem nova intervenção. Também mostra que o número de estudos disponíveis é pequeno.",
         ],
       },
       {
         titulo: "Laminados cerâmicos",
         paragrafos: [
           "São confeccionados sob medida fora do consultório e cimentados depois, com um preparo mais específico do dente. Tendem a manter cor e forma de maneira mais estável ao longo do tempo, o que costuma pesar na indicação para casos mais amplos ou exigentes.",
+          "Uma meta-análise indexada no PubMed (Klein, 2024) reuniu estudos de laminados cerâmicos com acompanhamento de longo prazo. Para os laminados de zircônia, os dados de longo prazo ainda são limitados.",
         ],
       },
       {
@@ -143,15 +145,16 @@ export const BLOG_POSTS: BlogPost[] = [
         paragrafos: [],
         lista: [
           "Tempo de confecção: resina é feita na consulta; cerâmica passa por laboratório e leva mais de uma sessão",
-          "Reversibilidade: resina pode ser removida/refeita com mais facilidade; cerâmica é uma decisão mais definitiva",
+          "Reversibilidade: a resina costuma poder ser removida ou refeita com mais facilidade; na cerâmica, quando há desgaste do dente, ele não pode ser desfeito",
           "Resistência a manchas: cerâmica costuma manter a cor original por mais tempo",
-          "Reparo: uma lasca em resina costuma ser reparada na mesma peça; em cerâmica, geralmente é trocada",
+          "Reparo: em resina, pequenas correções muitas vezes podem ser feitas na própria peça; em cerâmica, o caminho depende do tamanho do dano e é definido na avaliação",
         ],
       },
       {
         titulo: "Como decidir",
         paragrafos: [
           "Essa decisão não deveria ser tomada antes de um diagnóstico — é exatamente o que a avaliação resolve: entender a estrutura do seu dente, a proporção do seu sorriso e o que o seu caso realmente precisa, antes de indicar um caminho.",
+          "Os estudos científicos descrevem resultados de grupos de pacientes e não preveem o que acontecerá em um caso individual. Por isso a escolha entre resina e cerâmica é definida na avaliação clínica, considerando o seu caso.",
         ],
       },
     ],
