@@ -1,15 +1,14 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import CtaFinal from "@/components/CtaFinal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Estrutura da Clínica Ortoface | Itajaí/SC",
   description:
     "Conheça o espaço da Clínica Ortoface em Itajaí/SC: consultórios, recepção e entrada — a estrutura pensada para o seu atendimento.",
-  alternates: {
-    canonical: "/estrutura",
-  },
-};
+  path: "/estrutura",
+});
 
 const FOTOS = [
   { src: "/images/estrutura/consultorio-1.jpg", alt: "Consultório odontológico da Clínica Ortoface", width: 1366, height: 581 },

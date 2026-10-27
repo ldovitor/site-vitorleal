@@ -1,16 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import CtaFinal from "@/components/CtaFinal";
 import { TRATAMENTOS } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Tratamentos Odontológicos em Itajaí e Balneário Camboriú",
   description:
     "Estética dental, reabilitação oral e implantes em Itajaí e Balneário Camboriú, planejados dentro do Protocolo Leal de Reabilitação Planejada.",
-  alternates: {
-    canonical: "/tratamentos",
-  },
-};
+  path: "/tratamentos",
+});
 
 const CATEGORIAS = ["Estética Dental", "Reabilitação Oral", "Implantes"] as const;
 

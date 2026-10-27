@@ -1,17 +1,16 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { metaPagina } from "@/lib/metadata";
 import CtaFinal from "@/components/CtaFinal";
 import { BLOG_POSTS } from "@/lib/blog";
 import { TRATAMENTOS } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = metaPagina({
   title: "Blog | Dúvidas sobre Tratamentos Dentários — Dr. Vitor Leal",
   description:
     "Respostas a dúvidas comuns sobre lentes de contato dental, implantes, próteses, reabilitação oral e clareamento, por Dr. Vitor Leal (CRO-SC 20602), em Itajaí/SC.",
-  alternates: {
-    canonical: "/blog",
-  },
-};
+  path: "/blog",
+});
 
 export default function BlogPage() {
   return (
