@@ -108,7 +108,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     title: "Faceta (laminado) em resina ou cerâmico: qual a diferença?",
     metaDescription:
-      "Faceta em resina composta (também chamada de laminado em resina) e laminado cerâmico resolvem problemas parecidos de formas diferentes. Entenda quando cada um é indicado.",
+      "Faceta em resina composta (também chamada de laminado em resina) e laminado cerâmico atendem a necessidades parecidas de formas diferentes. Entenda quando cada um é indicado.",
     dataISO: "2026-09-08",
     dataExibicao: "8 de setembro de 2026",
     resumo: "A indicação de cada material depende do que o seu caso precisa, e não de uma escolha isolada.",
@@ -117,13 +117,13 @@ export const BLOG_POSTS: BlogPost[] = [
     resumoRapido: [
       "Resina composta: feita na hora, no consultório, mais conservadora e reversível.",
       "Laminado cerâmico: feito em laboratório, preparo mais específico, mais estável a longo prazo.",
-      "Resina tende a pigmentar um pouco mais com o tempo (café, vinho); cerâmica resiste melhor a manchas.",
+      "O material da faceta (resina ou cerâmica) influencia a aparência ao longo do tempo; a escolha é feita na avaliação.",
       "A escolha certa depende do diagnóstico, não de preferência isolada por material.",
     ],
     corpo: [
       {
         paragrafos: [
-          "É comum chegar à avaliação já com essa dúvida: faceta em resina (também chamada de laminado em resina) ou laminado cerâmico? Os dois resolvem problemas parecidos — pequenas imperfeições, desalinhamento leve, cor irregular — mas de formas diferentes, e a escolha não é só estética.",
+          "É comum chegar à avaliação já com essa dúvida: faceta em resina (também chamada de laminado em resina) ou laminado cerâmico? Os dois atendem a necessidades parecidas — pequenas imperfeições, desalinhamento leve, cor irregular — mas de formas diferentes, e a escolha não é só estética.",
         ],
       },
       {
@@ -146,14 +146,14 @@ export const BLOG_POSTS: BlogPost[] = [
         lista: [
           "Tempo de confecção: resina é feita na consulta; cerâmica passa por laboratório e leva mais de uma sessão",
           "Reversibilidade: a resina costuma poder ser removida ou refeita com mais facilidade; na cerâmica, quando há desgaste do dente, ele não pode ser desfeito",
-          "Resistência a manchas: cerâmica costuma manter a cor original por mais tempo",
+          "Manchas e desgaste: resina e cerâmica se comportam de formas diferentes; o dentista explica essas diferenças e avalia a indicação no seu caso",
           "Reparo: em resina, pequenas correções muitas vezes podem ser feitas na própria peça; em cerâmica, o caminho depende do tamanho do dano e é definido na avaliação",
         ],
       },
       {
         titulo: "Como decidir",
         paragrafos: [
-          "Essa decisão não deveria ser tomada antes de um diagnóstico — é exatamente o que a avaliação resolve: entender a estrutura do seu dente, a proporção do seu sorriso e o que o seu caso realmente precisa, antes de indicar um caminho.",
+          "Essa decisão não deveria ser tomada antes de um diagnóstico — é exatamente o que a avaliação esclarece: entender a estrutura do seu dente, a proporção do seu sorriso e o que o seu caso realmente precisa, antes de indicar um caminho.",
           "Os estudos científicos descrevem resultados de grupos de pacientes e não preveem o que acontecerá em um caso individual. Por isso a escolha entre resina e cerâmica é definida na avaliação clínica, considerando o seu caso.",
         ],
       },
@@ -301,7 +301,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Começar com alimentos mais macios e ir aumentando a consistência aos poucos",
           "Mastigar dos dois lados da boca, não só de um",
           "Praticar a fala em voz alta nos primeiros dias, se notar dificuldade",
-          "Manter as consultas de ajuste — pequenos incômodos resolvidos cedo evitam desconforto maior depois",
+          "Manter as consultas de ajuste — pequenos incômodos ajustados cedo podem evitar desconforto maior depois",
         ],
       },
       {
@@ -470,9 +470,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "Implante imediato é aquele instalado no mesmo procedimento da extração do dente. Entenda de que depende e por que nem todo caso é indicado.",
     dataISO: "2026-10-20",
     dataExibicao: "20 de outubro de 2026",
-    resumo: "Em alguns casos é possível; em outros, esperar a cicatrização é o caminho mais seguro.",
+    resumo: "Em alguns casos é possível; em outros, esperar a cicatrização faz parte do planejamento.",
     respostaDireta:
-      "Em alguns casos é possível instalar o implante junto com a extração do dente, mas depende das condições do osso, da gengiva e da região — por isso só a avaliação, com exames de imagem, mostra se o seu caso permite ou se é melhor esperar a cicatrização antes.",
+      "Em alguns casos é possível instalar o implante junto com a extração do dente, mas depende das condições do osso, da gengiva e da região — por isso só a avaliação, com exames de imagem, mostra se o seu caso permite ou se é indicado esperar a cicatrização antes.",
     resumoRapido: [
       "Implante imediato é o instalado no mesmo procedimento da extração do dente.",
       "Depende da quantidade e da qualidade do osso, do estado da gengiva e da ausência de infecção ativa na região.",
@@ -489,7 +489,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         titulo: "O que é o implante imediato",
         paragrafos: [
-          "É o implante instalado no mesmo procedimento em que o dente é removido, aproveitando o espaço deixado pela raiz. A ideia é reduzir etapas, mas isso só é uma vantagem quando as condições da região permitem fazer com segurança.",
+          "É o implante instalado no mesmo procedimento em que o dente é removido, aproveitando o espaço deixado pela raiz. A ideia é reduzir etapas, mas isso só é considerado quando as condições da região permitem.",
         ],
       },
       {
@@ -504,7 +504,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        titulo: "Quando esperar costuma ser melhor",
+        titulo: "Quando esperar costuma ser indicado",
         paragrafos: [
           "Se há infecção, perda importante de osso ou pouca estrutura de apoio, instalar o implante junto com a extração pode aumentar o risco. Nesses casos, o mais comum é extrair o dente, deixar a região cicatrizar (e, se for preciso, fazer um enxerto) e só então instalar o implante. Esperar não é atraso: é parte do planejamento.",
         ],
@@ -513,6 +513,12 @@ export const BLOG_POSTS: BlogPost[] = [
         titulo: "E o dente provisório e a prótese final",
         paragrafos: [
           "Mesmo no implante imediato, a prótese final em geral só é feita depois que o implante se integra ao osso. Se um dente provisório é possível ou não, e como ele é feito, também depende do seu caso.",
+        ],
+      },
+      {
+        titulo: "O que dizem os estudos",
+        paragrafos: [
+          "Uma revisão sistemática com meta-análise de ensaios clínicos randomizados (Campi et al., 2025, Quintessence International; indexada no PubMed) analisou o implante imediato em alvéolos com defeito ósseo vestibular. Os autores descrevem resultados clínicos e radiográficos comparáveis aos dos métodos tradicionais no curto prazo, mas com poucos estudos disponíveis. Destacam que a regeneração óssea foi essencial, que o implante imediato exige critérios rigorosos de indicação e que não foi possível avaliar a face vestibular por radiografia. Esses resultados descrevem grupos de pacientes e não permitem prever o que acontecerá em um caso individual; a indicação é definida na avaliação clínica.",
         ],
       },
       {
