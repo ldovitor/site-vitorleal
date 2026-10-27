@@ -13,6 +13,17 @@ const nextConfig: NextConfig = {
   // Fotos do site ficam em cache no navegador por 30 dias (o Google PageSpeed
   // apontava cache curto). Se uma foto for trocada mantendo o mesmo nome, ela
   // pode demorar até 30 dias para atualizar para quem já visitou: prefira nomes novos.
+  // Endereço antigo do artigo sobre implante imediato (mudou em 27/10/2026): 301 para não perder
+  // a indexação do Google nem os links já compartilhados.
+  async redirects() {
+    return [
+      {
+        source: "/blog/implante-dentario-imediato-mesmo-dia-da-extracao",
+        destination: "/blog/implante-dentario-imediato-quando-e-indicado",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
