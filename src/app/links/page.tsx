@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { metaPagina } from "@/lib/metadata";
 import Image from "next/image";
+import MapaSobClique from "@/components/MapaSobClique";
 import { WHATSAPP_LINK, SOCIAL_LINKS, GOOGLE_REVIEWS_URL } from "@/lib/content";
 
 export const metadata: Metadata = metaPagina({
@@ -111,15 +112,7 @@ export default function LinksPage() {
         </nav>
 
         <div className="mt-8 w-full rounded-xl overflow-hidden border border-areia/15">
-          <iframe
-            src="https://www.google.com/maps?q=Rua+Lauro+M%C3%BCller%2C+757+-+Fazenda%2C+Itaja%C3%AD+-+SC%2C+88301-401&output=embed"
-            width="100%"
-            height="200"
-            style={{ border: 0, display: "block" }}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Localização da Clínica Ortoface"
-          />
+          <div style={{ height: 200 }}><MapaSobClique titulo="Localização da Clínica Ortoface" /></div>
         </div>
         <p className="mt-3 text-xs text-areia/50 text-center">
           Rua Lauro Müller, 757 — Fazenda, Itajaí/SC
