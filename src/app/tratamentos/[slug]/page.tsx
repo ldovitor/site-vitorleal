@@ -40,8 +40,26 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
   const casosRelacionados = CASOS_CLINICOS.filter((c) => c.categoria === tratamento.categoria).slice(0, 3);
   const artigosRelacionados = BLOG_POSTS.filter((p) => p.tratamentoRelacionado === tratamento.slug);
 
+  const faqJsonLd = tratamento.faq
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: tratamento.faq.map((item) => ({
+          "@type": "Question",
+          name: item.pergunta,
+          acceptedAnswer: { "@type": "Answer", text: item.resposta },
+        })),
+      }
+    : null;
+
   return (
     <>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <section className="section pt-16 bg-bege">
         <div className="container-site max-w-2xl">
           <Breadcrumbs
@@ -53,6 +71,9 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
           />
           <p className="text-sm text-bronze mb-3">{tratamento.categoria}</p>
           <h1 className="text-4xl mb-4">{tratamento.nome}</h1>
+          {tratamento.respostaDireta && (
+            <p className="text-lg text-cinza leading-relaxed">{tratamento.respostaDireta}</p>
+          )}
           {!tratamento.completo && (
             <p className="text-sm text-cinza italic">
               Página em desenvolvimento — já segue a estrutura de quatro etapas do
@@ -75,6 +96,20 @@ export default async function TratamentoPage(props: PageProps<"/tratamentos/[slu
               <p className="text-cinza leading-relaxed">{tratamento[etapa.chave]}</p>
             </div>
           ))}
+
+          {tratamento.faq && (
+            <div>
+              <h2 className="text-2xl mb-4">Perguntas frequentes</h2>
+              <div className="space-y-6">
+                {tratamento.faq.map((item) => (
+                  <div key={item.pergunta}>
+                    <h3 className="text-lg mb-1">{item.pergunta}</h3>
+                    <p className="text-cinza leading-relaxed">{item.resposta}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="pt-4">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary">
