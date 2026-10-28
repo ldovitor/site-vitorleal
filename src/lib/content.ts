@@ -102,6 +102,8 @@ export type Tratamento = {
   resultado: string;
   cta: string;
   completo: boolean;
+  respostaDireta?: string;
+  faq?: { pergunta: string; resposta: string }[];
 };
 
 export const TRATAMENTOS: Tratamento[] = [
@@ -132,7 +134,7 @@ export const TRATAMENTOS: Tratamento[] = [
     nome: "Implantes Dentários",
     categoria: "Implantes",
     resumoCard:
-      "Planejamento cirúrgico detalhado para devolver função de mastigação e um sorriso completo.",
+      "Planejamento cirúrgico detalhado da reabilitação da função de mastigação e do sorriso.",
     title: "Implantes Dentários em Itajaí e Balneário Camboriú",
     metaDescription:
       "Implantes dentários em Itajaí e Balneário Camboriú: planejamento cirúrgico detalhado das etapas do tratamento, definido em avaliação individual.",
@@ -141,12 +143,61 @@ export const TRATAMENTOS: Tratamento[] = [
     diagnostico:
       "Cada caso de implante exige análise da estrutura óssea, da mordida e do histórico clínico do paciente — é isso que define o planejamento cirúrgico e o tipo de prótese indicada.",
     planejamento:
-      "O posicionamento do implante é planejado para devolver função real de mastigação, não só preencher o espaço — pensando também no resultado estético da prótese final.",
+      "O posicionamento do implante é planejado pensando na função de mastigação, e não só em preencher o espaço — pensando também no resultado estético da prótese final.",
     execucao:
       "Implantes unitários, próteses sobre implante ou reabilitações mais extensas, conforme a necessidade identificada na avaliação — sempre com acompanhamento das etapas de cicatrização.",
     resultado:
-      "Função mastigatória restabelecida e um sorriso completo novamente, com previsibilidade porque cada etapa foi planejada antes da cirurgia.",
+      "O objetivo do planejamento é a função de mastigação e um sorriso completo, conforme cada caso, com cada etapa planejada antes da cirurgia.",
     cta: "Agendar avaliação para implantes",
+    respostaDireta:
+      "Implante dentário é uma peça, geralmente de titânio, instalada no osso para sustentar um dente, uma ponte ou uma prótese. Na Clínica Ortoface, em Itajaí, o Dr. Vitor Leal (CRO-SC 20602) avalia cada caso com exames de imagem e planeja as etapas antes da cirurgia.",
+    faq: [
+      {
+        pergunta: "O que é um implante dentário?",
+        resposta:
+          "É uma peça, geralmente de titânio, instalada no osso da mandíbula ou da maxila para substituir a raiz do dente perdido. Sobre ela é colocada uma coroa, uma ponte ou uma prótese.",
+      },
+      {
+        pergunta: "Quem pode colocar implante?",
+        resposta:
+          "Depende de uma avaliação individual: estrutura óssea, saúde da gengiva, mordida e histórico clínico. Nem todo caso é indicado de forma direta, e alguns exigem preparo antes.",
+      },
+      {
+        pergunta: "Quais são as etapas do tratamento?",
+        resposta:
+          "Avaliação com exames de imagem, planejamento, cirurgia de instalação, período de cicatrização, confecção e instalação da prótese e consultas de manutenção. As etapas são explicadas antes de começar.",
+      },
+      {
+        pergunta: "Quanto tempo leva o tratamento com implante?",
+        resposta:
+          "Depende de cada caso, da cicatrização e do tipo de prótese. O tempo previsto é explicado na avaliação.",
+      },
+      {
+        pergunta: "Qual a diferença entre implante e prótese protocolo?",
+        resposta:
+          "O implante pode repor um dente ou vários. A prótese protocolo é uma prótese fixa apoiada em implantes para quem perdeu todos ou quase todos os dentes de uma arcada. A indicação é definida na avaliação.",
+      },
+      {
+        pergunta: "Que cuidados o implante exige?",
+        resposta:
+          "Higiene cuidadosa e consultas de manutenção regulares fazem parte do tratamento.",
+      },
+      {
+        pergunta: "Quanto custa um implante?",
+        resposta:
+          "O valor depende do número de implantes, do tipo de prótese e do planejamento de cada caso, por isso é apresentado depois da avaliação.",
+      },
+      {
+        pergunta: "Vocês atendem Balneário Camboriú?",
+        resposta:
+          "A clínica fica em Itajaí (Rua Lauro Müller, 757) e atende também pacientes de Balneário Camboriú, Camboriú e Navegantes.",
+      },
+      {
+        pergunta: "Como agendo uma avaliação?",
+        resposta:
+          "Pelo WhatsApp (47) 99640-1067, de segunda a sexta, das 9h às 19h.",
+      },
+    ],
     completo: true,
   },
   {
@@ -163,10 +214,59 @@ export const TRATAMENTOS: Tratamento[] = [
     planejamento:
       "A quantidade e a posição dos implantes, o tipo de prótese e a sequência das etapas são planejados antes da cirurgia, para que função de mastigação e estética sejam pensadas juntas. As etapas são explicadas antes de começar.",
     execucao:
-      "Os implantes são instalados e a prótese é confeccionada e instalada em etapas, com provas e ajustes de encaixe, mordida e fala. Em casos selecionados, e quando a avaliação clínica e de imagem permitem, pode ser indicado instalar uma prótese provisória fixa no período próximo à cirurgia (carga imediata). Essa indicação depende do osso disponível e da estabilidade dos implantes e é definida pelo cirurgião-dentista, caso a caso, após avaliação; a prótese definitiva é feita após a cicatrização, no tempo que cada caso exigir.",
+      "Os implantes são instalados e a prótese é confeccionada e instalada em etapas, com provas e ajustes de encaixe, mordida e fala. Em casos selecionados, e quando a avaliação clínica e de imagem permitem, pode ser indicado instalar uma prótese provisória fixa no período próximo à cirurgia (carga imediata). Essa indicação depende do osso disponível e da estabilidade dos implantes e é definida pelo cirurgião-dentista, caso a caso, após avaliação; a prótese final é feita após a cicatrização, no tempo que cada caso exigir.",
     resultado:
       "Uma prótese fixa apoiada em implantes, com estabilidade que costuma ser maior que a de uma dentadura removível, conforme cada caso. Ela exige higiene cuidadosa e consultas de manutenção regulares, e o acompanhamento faz parte do tratamento.",
     cta: "Agendar avaliação para prótese protocolo",
+    respostaDireta:
+      "Prótese protocolo é uma prótese fixa apoiada em implantes, indicada em avaliação individual para quem perdeu todos ou quase todos os dentes de uma arcada. Na Clínica Ortoface, em Itajaí, o Dr. Vitor Leal (CRO-SC 20602) define a indicação depois de exames de imagem e da análise do osso, da gengiva e da mordida.",
+    faq: [
+      {
+        pergunta: "O que é a prótese protocolo?",
+        resposta:
+          "É uma prótese fixa, apoiada em implantes instalados no osso, que substitui os dentes de uma arcada. Em geral, depois de instalada ela é removida apenas pelo dentista, quando é preciso fazer manutenção.",
+      },
+      {
+        pergunta: "Para quem a prótese protocolo é indicada?",
+        resposta:
+          "Para quem perdeu todos ou quase todos os dentes, ou usa uma dentadura que se movimenta e atrapalha a mastigação e a fala. Nem todo caso comporta essa prótese: a indicação é definida na avaliação, com exames de imagem.",
+      },
+      {
+        pergunta: "Qual a diferença entre prótese protocolo e dentadura?",
+        resposta:
+          "A dentadura é removível e se apoia na gengiva. A prótese protocolo é fixa e se apoia em implantes, e por isso costuma ter mais estabilidade, conforme cada caso. Ela exige higiene cuidadosa e consultas de manutenção regulares.",
+      },
+      {
+        pergunta: "Como é a avaliação?",
+        resposta:
+          "A avaliação inclui exames de imagem e a análise da estrutura óssea, da saúde da gengiva e da mordida. Com isso, o Dr. Vitor explica se a prótese protocolo é uma opção para o seu caso e quais seriam as etapas, antes de qualquer cirurgia.",
+      },
+      {
+        pergunta: "Quanto tempo dura o tratamento?",
+        resposta:
+          "Depende de cada caso: da quantidade de osso, da cicatrização dos implantes e do tipo de prótese. As etapas e o tempo previsto são explicados na avaliação, antes de começar.",
+      },
+      {
+        pergunta: "Existe a opção de prótese provisória fixa (carga imediata)?",
+        resposta:
+          "Em casos selecionados, quando a avaliação clínica e de imagem permitem, pode ser indicado instalar uma prótese provisória fixa no período próximo à cirurgia. Essa indicação depende do osso disponível e da estabilidade dos implantes e é definida caso a caso. A prótese final é feita após a cicatrização.",
+      },
+      {
+        pergunta: "Quanto custa a prótese protocolo?",
+        resposta:
+          "O valor depende da quantidade de implantes, do tipo de prótese e do planejamento de cada caso, por isso é apresentado depois da avaliação.",
+      },
+      {
+        pergunta: "Vocês atendem Balneário Camboriú?",
+        resposta:
+          "A clínica fica em Itajaí (Rua Lauro Müller, 757) e atende também pacientes de Balneário Camboriú, Camboriú e Navegantes.",
+      },
+      {
+        pergunta: "Como agendo uma avaliação?",
+        resposta:
+          "Pelo WhatsApp (47) 99640-1067, de segunda a sexta, das 9h às 19h.",
+      },
+    ],
     completo: true,
   },
   {
