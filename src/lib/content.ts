@@ -17,7 +17,7 @@ export const GOOGLE_PLACE_ID = "ChIJY5uG6FzN2JQRfZM1OcRyp_U";
 export const GOOGLE_REVIEWS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   "Clínica Ortoface"
 )}&query_place_id=${GOOGLE_PLACE_ID}`;
-export const GOOGLE_REVIEWS_COUNT = 61;
+export const GOOGLE_REVIEWS_COUNT = 62;
 
 // Avaliações reais de pacientes no Google, copiadas do site atual (mesma fonte;
 // texto e nomes exatamente como publicados publicamente). Enquanto não conectamos
