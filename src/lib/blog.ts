@@ -554,4 +554,89 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     tratamentoRelacionado: "implantes-dentarios",
   },
+  {
+    slug: "plano-de-tratamento-odontologico-o-que-deve-ter",
+    title: "Plano de tratamento odontológico: o que ele deve ter antes de você começar",
+    metaDescription:
+      "Antes de iniciar um tratamento com implantes, prótese ou lentes, entenda o que um plano odontológico deve explicar. Clínica Ortoface, Itajaí/SC. Dr. Vitor Leal, CRO-SC 20602.",
+    dataISO: "2026-11-01",
+    dataExibicao: "1 de novembro de 2026",
+    chamada: "Veja o que perguntar antes de começar um tratamento",
+    relacionados: ["quanto-tempo-demora-uma-reabilitacao-oral-completa", "como-funciona-o-implante-dentario-passo-a-passo"],
+    resumo: "Um plano de tratamento claro explica o diagnóstico, as etapas, as alternativas e o acompanhamento, antes de qualquer procedimento.",
+    respostaDireta:
+      "Um plano de tratamento odontológico deve explicar, com palavras simples, o que foi encontrado no diagnóstico, quais são as opções para o seu caso, em quais etapas o tratamento será feito, quais são os cuidados e riscos, e como será o acompanhamento depois. Ele é construído na avaliação, com exame clínico e exames de imagem, e não antes dela.",
+    resumoRapido: [
+      "O plano começa pelo diagnóstico: exame clínico e exames de imagem, não um palpite por mensagem.",
+      "Deve apresentar as opções para o seu caso, inclusive as mais simples, e explicar por que uma foi indicada.",
+      "As etapas e a ordem do tratamento devem ser explicadas antes de começar.",
+      "Riscos, cuidados e o que depende de você também fazem parte da conversa.",
+      "Valores e formas de pagamento são apresentados depois da avaliação, quando o plano já existe.",
+      "O acompanhamento e a manutenção depois do tratamento devem estar combinados desde o início.",
+    ],
+    corpo: [
+      {
+        paragrafos: [
+          "Quem pensa em fazer implantes, uma prótese ou lentes de contato dental costuma começar pela pergunta: quanto custa e quanto tempo leva? São perguntas legítimas, mas elas só têm resposta depois de um passo anterior: o plano de tratamento. Sem ele, qualquer número seria um chute.",
+          "Este texto é um roteiro para você entender o que esperar de um plano bem explicado, em qualquer clínica. Não substitui a avaliação com o dentista.",
+        ],
+      },
+      {
+        titulo: "1. Um diagnóstico que você consiga entender",
+        paragrafos: [
+          "O plano nasce do diagnóstico: conversa sobre a sua queixa e o seu histórico, exame da boca e, quando necessário, exames de imagem. Você deve sair da avaliação sabendo o que foi encontrado, em linguagem simples, e podendo perguntar o que não entendeu.",
+        ],
+      },
+      {
+        titulo: "2. As opções para o seu caso",
+        paragrafos: [
+          "Em muitos casos há mais de um caminho. Um bom plano apresenta as alternativas possíveis, explica o que cada uma envolve e por que uma delas está sendo indicada para você. A decisão final é sua, com a orientação do dentista.",
+        ],
+      },
+      {
+        titulo: "3. As etapas, na ordem em que acontecem",
+        paragrafos: [
+          "Tratamentos mais complexos, como implantes e reabilitação oral, são feitos em etapas. O plano deve mostrar a sequência: o que vem primeiro, o que depende da cicatrização e quando cada consulta acontece. O tempo de cada etapa varia de pessoa para pessoa e é explicado na avaliação.",
+        ],
+      },
+      {
+        titulo: "4. Cuidados, riscos e o que depende de você",
+        paragrafos: [
+          "Todo tratamento tem cuidados e possíveis intercorrências. Um plano responsável explica isso com calma, inclusive o papel do paciente: higiene, retornos e hábitos como o cigarro, que podem influenciar o resultado.",
+        ],
+      },
+      {
+        titulo: "5. Valores e formas de pagamento",
+        paragrafos: [
+          "O valor depende do que foi planejado: quantidade de procedimentos, materiais e etapas. Por isso ele é apresentado depois da avaliação, quando o plano já existe, e deve estar claro o que está incluído.",
+        ],
+      },
+      {
+        titulo: "6. Acompanhamento depois do tratamento",
+        paragrafos: [
+          "Terminar o tratamento não é o fim do cuidado. Consultas de manutenção e orientações de higiene fazem parte do plano e ajudam a conservar o que foi feito. Vale perguntar desde o início como será esse acompanhamento.",
+        ],
+      },
+      {
+        titulo: "Perguntas que você pode levar para a avaliação",
+        paragrafos: [],
+        lista: [
+          "O que foi encontrado nos meus exames?",
+          "Quais são as opções para o meu caso e por que esta foi indicada?",
+          "Quais são as etapas e como elas se encadeiam?",
+          "Quais cuidados e riscos eu devo conhecer?",
+          "Como e quando o valor será apresentado?",
+          "Como será o acompanhamento depois do tratamento?",
+        ],
+      },
+      {
+        titulo: "Como isso funciona na Clínica Ortoface",
+        paragrafos: [
+          "Na Clínica Ortoface, em Itajaí/SC, o Dr. Vitor Leal (CRO-SC 20602) conversa pessoalmente com você na avaliação, explica o diagnóstico e as opções e só então apresenta o plano. Atendemos também pacientes de Balneário Camboriú e região.",
+          "Cada pessoa tem uma situação diferente: o que serve para um caso pode não servir para outro, e a indicação é sempre definida na avaliação clínica.",
+        ],
+      },
+    ],
+    tratamentoRelacionado: "reabilitacao-oral",
+  },
 ];
